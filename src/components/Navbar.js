@@ -31,7 +31,7 @@ const Navbar = () => {
         We are aware of people impersonating our employees offering jobs through WhatsApp or iMessage. When in doubt, reach out to us at general@devsmojo.com to confirm authenticity.
       </p>
       <header className={`sticky top-0 z-50   font-inter   transition-colors duration-300 ${scrolling ? 'bg-white' : 'bg-mainSectionBg'}`}>
-        <nav className="container mx-auto p-1 flex justify-between items-center">
+        <nav className="container mx-auto p-5 flex justify-between items-center">
           <Link href="/">
             <img src="/devsmojo.jpeg" alt="YourLogo" className="cursor-pointer" style={{ height: '51px', width: '147px' }} />
           </Link>
