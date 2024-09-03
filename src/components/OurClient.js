@@ -5,14 +5,14 @@ export default function OurClient() {
         <div className="flex flex-col items-center p-4 bg-gray-200 mt-2 rounded-lg" data-aos="zoom-in-up"
         data-aos-duration="1000">
             <Head>
-                <title>AnbruchIT</title>
+                <title>DevsMojo</title>
                 <meta name="description" content="AnbruchIT Header and Card Layout" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <main className="w-full max-w-9xl  mt-10 text-center p-5" style={{ height: '400px' }}>
                 {/* Header */}
-                <h1 className="text-6xl font-bold mb-8">AnbruchIT in Numbers</h1>
+                <h1 className="text-6xl font-bold mb-8">DevsMojo in Numbers</h1>
 
                 {/* Cards Section */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
