@@ -6,6 +6,7 @@ import OurClient from '@/components/OurClient'
 import OurPartner from '@/components/OurPartner'
 import Services from '@/components/Services'
 import TechRecruit from '@/components/TechRecruitment'
+import VisualShowcase from '@/components/VisualShow'
 import React from 'react'
  
  const page = () => {
@@ -18,6 +19,7 @@ import React from 'react'
        <OurPartner/>
        <ClientSection/>
        <OurClient/>
+       <VisualShowcase/>
       
      </div>
    )
