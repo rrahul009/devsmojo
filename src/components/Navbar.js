@@ -43,7 +43,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#services">
+                <Link href="pages/techrecruit">
                   <span className="text-navyblue text-md hover:text-lightblue transition cursor-pointer">Services</span>
                 </Link>
               </li>
