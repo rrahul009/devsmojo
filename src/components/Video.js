@@ -11,7 +11,7 @@ export default function Video() {
 
             <main className="w-full max-w-7xl mx-auto mt-12 text-center">
                 {/* Header */}
-                <h1 className="text-4xl font-extrabold text-orange-300 mb-8">Video Showcase</h1>
+                <h1 className="text-4xl font-extrabold text-orange-300 mb-8">DevsMojo</h1>
 
                 {/* Full-Width Video Section */}
                 <section className="relative w-full h-[70vh] bg-gray-900 text-white rounded-lg shadow-lg overflow-hidden">

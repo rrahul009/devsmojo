@@ -33,7 +33,7 @@ const Navbar = () => {
       <header className={`sticky top-0 z-50   font-inter   transition-colors duration-300 ${scrolling ? 'bg-white' : 'bg-mainSectionBg'}`}>
         <nav className="container mx-auto p-5 flex justify-between items-center">
           <Link href="/">
-            <img src="/devsmojo.jpeg" alt="YourLogo" className="cursor-pointer" style={{ height: '51px', width: '147px' }} />
+            <img src="/devsmojo2.png" alt="YourLogo" className="cursor-pointer" style={{ height: '51px', width: '147px' }} />
           </Link>
           <div className="flex-1 flex justify-center">
             <ul className="flex space-x-6">
