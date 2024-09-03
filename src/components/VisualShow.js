@@ -1,8 +1,15 @@
+"use client"
+import { initializeAOS } from '@/app/utils/Aos_setup';
 import Head from 'next/head';
+import { useEffect } from 'react';
 
 export default function VisualShowcase() {
+    useEffect(() => {
+        const cleanupAOS = initializeAOS();
+        return cleanupAOS; // Cleanup AOS on unmount
+    }, []);
     return (
-        <div className="min-h-screen flex flex-col items-center p-6 bg-gray-100">
+        <div className="min-h-screen flex flex-col items-center p-6 bg-gray-100" >
             <Head>
                 <title>Visual Showcase - AnbruchIT</title>
                 <meta name="description" content="Explore interactive data visualizations and key features of AnbruchIT." />
@@ -14,7 +21,7 @@ export default function VisualShowcase() {
                 <h1 className="text-4xl font-extrabold text-gray-900 mb-7">Interactive Data & Features</h1>
 
                 {/* Interactive Data Visualization */}
-                <section className="mb-4 relative bg-blue-100 py-12 px-6 rounded-lg shadow-lg overflow-hidden">
+                <section className="mb-4 relative bg-blue-100 py-12 px-6 rounded-lg shadow-lg overflow-hidden"data-aos="zoom-in-left">
                     <div className="absolute inset-0 bg-blue-200 transform -translate-y-16 -z-10" style={{ clipPath: 'ellipse(80% 60% at 50% 50%)' }}></div>
                     <h2 className="text-3xl font-semibold text-gray-900 mb-8">Our Impact in Numbers</h2>
                     <div className="relative flex flex-col lg:flex-row justify-center items-center space-y-8 lg:space-y-0 lg:space-x-8">
@@ -39,7 +46,7 @@ export default function VisualShowcase() {
                 </section>
 
                 {/* Features Showcase */}
-                <section className="relative bg-gray-200 py-12 px-6 rounded-lg shadow-lg overflow-hidden">
+                <section className="relative bg-gray-200 py-12 px-6 rounded-lg shadow-lg overflow-hidden" data-aos="zoom-in-left">
                     <div className="absolute inset-0 bg-gradient-to-r from-purple-300 via-pink-200 to-yellow-200 opacity-50"></div>
                     <h2 className="text-3xl font-semibold text-gray-1600 mb-8">Featured Capabilities</h2>
                     <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
@@ -67,7 +74,7 @@ export default function VisualShowcase() {
                 </section>
 
                 {/* Call-to-Action */}
-                <section className="mt-2 py-12 bg-blue-100">
+                {/* <section className="mt-2 py-12 bg-blue-100">
                     <h2 className="text-3xl font-semibold text-gray-900 mb-6">Explore More</h2>
                     <p className="text-lg text-gray-700 mb-6">
                         Dive deeper into our offerings and see how we can help your business grow. Connect with us to learn more!
@@ -75,7 +82,7 @@ export default function VisualShowcase() {
                     <a href="mailto:contact@anbruchit.com" className="inline-block px-8 py-4 bg-blue-700 text-white rounded-lg shadow-md hover:bg-blue-800 transition-all duration-300">
                         Get in Touch
                     </a>
-                </section>
+                </section> */}
             </main>
         </div>
     );

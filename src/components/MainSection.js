@@ -30,7 +30,7 @@ const MainSection = () => {
     return (
         <div className="bg-mainSectionBg p-10 mb-0">
             <div className="max-w-4xl mx-10 p-10">
-                <p className="text-4xl font-bold leading-[133%] mb-6">
+                <p className="text-5xl font-extrabold leading-[133%] mb-6">
                     Premium <span className="text-blue-600">IT Recruitment</span> through pre-vetted Software Profiles
                 </p>
                 <p className="text-xl font-semibold leading-[133%] mb-4">
