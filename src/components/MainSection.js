@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'; // Import an upward arrow icon
+import Carausel from './Carausel';
 
 const MainSection = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -28,8 +29,11 @@ const MainSection = () => {
     };
 
     return (
+      <>
+     
         <div className="bg-white p-5 mb-0">
-          <div className='flex'>
+        <Carausel/>
+          {/* <div className='flex'>
     <div className="max-w-4xl mx-10 p-0">
         <p className="text-5xl font-extrabold leading-[133%] mb-6">
             Premium <span className="text-blue-600">IT Recruitment</span> through pre-vetted Software Profiles
@@ -66,7 +70,7 @@ const MainSection = () => {
     <div className='flex justify-center items-center flex-grow mt-15'>
         <img src='https://www.viqu.co.uk/wp-content/uploads/2023/10/shutterstock_1183089439-1536x1024.jpg' alt='Recruitment' className=' object-cover rounded-sm'style={{width:'700px',height:'400px'}} />
     </div>
-</div>
+</div> */}
 
 
             {/* Scroll to Top Button */}
@@ -80,6 +84,7 @@ const MainSection = () => {
                 </button>
             )}
         </div>
+      </>
     );
 };
 
