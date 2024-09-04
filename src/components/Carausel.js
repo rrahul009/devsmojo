@@ -16,7 +16,11 @@ const Carausel = () => {
                     }
                 `}
             </style>
-            <Carousel>
+            <Carousel
+            autoPlay={true}
+            infiniteLoop={true}
+            interval={5000}
+            >
                 {/* First slide */}
                 <div className='flex'>
                     <div className="max-w-4xl mx-10 p-0">
