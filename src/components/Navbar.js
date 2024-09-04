@@ -33,27 +33,27 @@ const Navbar = () => {
       <header className={`sticky top-0 z-50   font-inter   transition-colors duration-300 ${scrolling ? 'bg-white' : 'bg-mainSectionBg'}`}>
         <nav className="container mx-auto p-3 flex justify-between items-center">
           <Link href="/">
-            <img src="/devsmojo2.png" alt="YourLogo" className="cursor-pointer" style={{ height: '51px', width: '147px' }} />
+            <img src="/devsmojo.jpeg" alt="YourLogo" className="cursor-pointer" style={{height:'55px',width:'150px'}}  />
           </Link>
           <div className="flex-1 flex justify-center">
             <ul className="flex space-x-6">
               <li>
-                <Link href="#talent-recruitment">
+                <Link href="talentrecruitment">
                   <span className="text-navyblue text-md hover:text-lightblue transition cursor-pointer">Talent Recruitment</span>
                 </Link>
               </li>
               <li>
-                <Link href="pages/techrecruit">
+                <Link href="services">
                   <span className="text-navyblue text-md hover:text-lightblue transition cursor-pointer">Services</span>
                 </Link>
               </li>
               <li>
-                <Link href="#resource-center">
+                <Link href="resourcecenter">
                   <span className="text-navyblue text-md hover:text-lightblue transition cursor-pointer">Resource Center</span>
                 </Link>
               </li>
               <li>
-                <Link href="#about-us">
+                <Link href="aboutus">
                   <span className="text-navyblue text-md hover:text-lightblue transition cursor-pointer">About Us</span>
                 </Link>
               </li>
