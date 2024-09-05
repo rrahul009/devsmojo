@@ -19,7 +19,7 @@ const Services = () => {
                 {/* Services Section */}
                 <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     {/* Custom Software Development */}
-                    <Link href="techrecruit">
+                    <Link href="services">
                         <div className="bg-white shadow-md p-5 rounded-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-xl duration-300">
                             <div className="flex justify-center p-2">
                                 <img
@@ -44,7 +44,7 @@ const Services = () => {
 
 
                     {/* Mobile App */}
-                    <Link href="/pages/mobileapp">
+                    <Link href="services">
                         <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl duration-300">
                             <div className="flex justify-center py-1">
                                 <img
@@ -64,13 +64,13 @@ const Services = () => {
                     </Link>
 
                     {/* Enterprise Application Development */}
-                    <Link href="/pages/enterprise">
+                    <Link href="services">
                         <div className="bg-white shadow-lg p-5 rounded-xl overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl duration-300">
                             <div className="flex justify-center p-2">
                                 <img
                                     src='https://cdn-icons-png.flaticon.com/512/2560/2560114.png'
                                     alt="Enterprise Application Development"
-                                    
+
                                     height="150px"
                                     width="150px"
                                 />
@@ -84,7 +84,7 @@ const Services = () => {
                     </Link>
 
                     {/* Web Development */}
-                    <Link href="/pages/webdevelopment">
+                    <Link href="services">
                         <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl duration-300">
                             <div className="flex justify-center py-0">
                                 <img
@@ -104,14 +104,14 @@ const Services = () => {
                     </Link>
 
                     {/* DevOps and Cloud Infrastructure */}
-                    <Link href="/pages/devops">
+                    <Link href="services">
                         <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl duration-300">
                             <div className="flex justify-center py-4">
                                 <img
                                     src='https://media.istockphoto.com/id/1136691184/vector/devops-icon-vector.jpg?s=612x612&w=0&k=20&c=b5gXUq7frnYfTJWmBKwELAe_bB_ZY40Wp9TlwOWlU_U='
                                     alt="DevOps and Cloud Infrastructure"
-                                   
-                                       height="150px"
+
+                                    height="150px"
                                     width="150px"
                                 />
                             </div>
@@ -124,7 +124,7 @@ const Services = () => {
                     </Link>
 
                     {/* Custom App Development */}
-                    <Link href="/pages/customappdev">
+                    <Link href="services">
                         <div className="bg-white shadow-lg rounded-xl overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl duration-300">
                             <div className="flex justify-center py-0">
                                 <img

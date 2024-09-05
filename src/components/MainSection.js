@@ -29,11 +29,11 @@ const MainSection = () => {
     };
 
     return (
-      <>
-     
-        <div className="bg-white p-5 mb-0">
-        <Carausel/>
-          {/* <div className='flex'>
+        <>
+
+            <div className="bg-gray-20 p-5 mb-0">
+                <Carausel />
+                {/* <div className='flex'>
     <div className="max-w-4xl mx-10 p-0">
         <p className="text-5xl font-extrabold leading-[133%] mb-6">
             Premium <span className="text-blue-600">IT Recruitment</span> through pre-vetted Software Profiles
@@ -73,18 +73,18 @@ const MainSection = () => {
 </div> */}
 
 
-            {/* Scroll to Top Button */}
-            {isVisible && (
-                <button
-                    onClick={scrollToTop}
-                    className="fixed bottom-4 right-4 bg-black text-white p-4 rounded-full shadow-lg hover:bg-gray-800 transition-colors duration-300 z-50"
-                    style={{ zIndex: 9999 }} // Ensure it is on top
-                >
-                    <ArrowUpwardIcon />
-                </button>
-            )}
-        </div>
-      </>
+                {/* Scroll to Top Button */}
+                {isVisible && (
+                    <button
+                        onClick={scrollToTop}
+                        className="fixed bottom-4 right-4 bg-black text-white p-4 rounded-full shadow-lg hover:bg-gray-800 transition-colors duration-300 z-50"
+                        style={{ zIndex: 9999 }} // Ensure it is on top
+                    >
+                        <ArrowUpwardIcon />
+                    </button>
+                )}
+            </div>
+        </>
     );
 };
 

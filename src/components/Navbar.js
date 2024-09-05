@@ -30,10 +30,10 @@ const Navbar = () => {
       <p className="text-center bg-navyblue text-white p-3 text-xs">
         We are aware of people impersonating our employees offering jobs through WhatsApp or iMessage. When in doubt, reach out to us at general@devsmojo.com to confirm authenticity.
       </p>
-      <header className={`sticky top-0 z-50 font-inter transition-colors duration-300 ${scrolling ? 'bg-white' : 'bg-mainSectionBg'}`}>
+      <header className={`sticky top-0 z-50 font-inter transition-colors duration-300 ${scrolling ? 'bg-white' : 'bg-white'}`}>
         <nav className="container mx-auto p-3 flex justify-between items-center">
           <Link href="/">
-            <img src="/devsmojo.jpeg" alt="YourLogo" className="cursor-pointer" style={{ height: '55px', width: '150px' }} />
+            <img src="/devsmojo3.jpeg" alt="YourLogo" className="cursor-pointer" style={{ height: '55px', width: '150px' }} />
           </Link>
           <div className="flex-1 flex justify-center">
             <ul className="flex space-x-6">
