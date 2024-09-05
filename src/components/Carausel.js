@@ -20,6 +20,7 @@ const Carausel = () => {
             autoPlay={true}
             infiniteLoop={true}
             interval={5000}
+            stopOnHover={true}
             >
                 {/* First slide */}
                 <div className='flex'>

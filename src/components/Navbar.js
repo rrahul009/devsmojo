@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import GridViewIcon from '@mui/icons-material/GridView';
@@ -30,15 +30,15 @@ const Navbar = () => {
       <p className="text-center bg-navyblue text-white p-3 text-xs">
         We are aware of people impersonating our employees offering jobs through WhatsApp or iMessage. When in doubt, reach out to us at general@devsmojo.com to confirm authenticity.
       </p>
-      <header className={`sticky top-0 z-50   font-inter   transition-colors duration-300 ${scrolling ? 'bg-white' : 'bg-mainSectionBg'}`}>
+      <header className={`sticky top-0 z-50 font-inter transition-colors duration-300 ${scrolling ? 'bg-white' : 'bg-mainSectionBg'}`}>
         <nav className="container mx-auto p-3 flex justify-between items-center">
           <Link href="/">
-            <img src="/devsmojo.jpeg" alt="YourLogo" className="cursor-pointer" style={{height:'55px',width:'150px'}}  />
+            <img src="/devsmojo.jpeg" alt="YourLogo" className="cursor-pointer" style={{ height: '55px', width: '150px' }} />
           </Link>
           <div className="flex-1 flex justify-center">
             <ul className="flex space-x-6">
               <li>
-                <Link href="talentrecruitment">
+                <Link href="techrecruit">
                   <span className="text-navyblue text-md hover:text-lightblue transition cursor-pointer">Talent Recruitment</span>
                 </Link>
               </li>
@@ -59,6 +59,11 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
+          <div className="flex-shrink-0">
+            <button className="px-3 mt-3 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-all duration-300 animate-shake">
+              Start a Conversation
+            </button>
+          </div>
           {/* Uncomment and adjust if needed
           <div>
             <GridViewIcon sx={{ fontSize: 32, color: 'black' }} />
@@ -66,6 +71,20 @@ const Navbar = () => {
         </nav>
       </header>
 
+      {/* <style jsx global>{`
+        @keyframes shake {
+          0% { transform: translateX(0); }
+          25% { transform: translateX(-10px); }
+          50% { transform: translateX(10px); }
+          75% { transform: translateX(-10px); }
+          100% { transform: translateX(0); }
+          
+        }
+
+        .animate-shake {
+          animation: shake 1s infinite;
+        }
+      `}</style> */}
     </>
   );
 };
