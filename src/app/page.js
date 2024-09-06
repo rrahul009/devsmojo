@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar'
 import OurClient from '@/components/OurClient'
 import OurPartner from '@/components/OurPartner'
 import PitchSection from '@/components/PitchSection'
+import PricingSection from '@/components/PriceStructure'
 import Services from '@/components/Services'
 import TalkToExpert from '@/components/TalkToExpert'
 import TechnologiesSection from '@/components/TechnologyWeUse'
@@ -26,6 +27,7 @@ const page = () => {
       <TalkToExpert/>
       <TechnologiesSection/>
       <InDemandSkillsPage/>
+      <PricingSection/>
       {/* <OurPartner/>
        <ClientSection/>
        <OurClient/> */}

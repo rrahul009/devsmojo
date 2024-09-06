@@ -2,7 +2,8 @@
 
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
-import React from 'react';
+import React, { useEffect } from 'react';
+import { initializeAOS } from '../utils/Aos_setup';
 // import ServerIcon from '@mui/icons-material/Server';
 // import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 // import CodeIcon from '@mui/icons-material/Code';
@@ -13,10 +14,14 @@ import React from 'react';
 // import SecurityIcon from '@mui/icons-material/Security';
 
 const TechRecruitmentPage = () => {
+  useEffect(() => {
+    const cleanupAOS = initializeAOS();
+    return cleanupAOS; // Cleanup AOS on unmount
+}, []);
   return (
     <>
       <Navbar />
-      <div className="bg-white min-h-screen py-5 px-2 sm:px-6 lg:px-3">
+      <div className="bg-white min-h-screen py-5 px-2 sm:px-6 lg:px-3"data-aos="zoom-in-up">
         <div className="max-w-5xl mx-auto">
           {/* Header Section */}
           <header className="text-center mb-5">
@@ -133,7 +138,7 @@ const TechRecruitmentPage = () => {
               </div>
             </div>
           </section>
-          <section className="p-8 bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 rounded-lg shadow-lg   mb-8 flex flex-wrap md:flex-nowrap">
+          <section className="p-8 bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 rounded-lg shadow-lg   mb-8 flex flex-wrap md:flex-nowrap"data-aos="zoom-in-up">
             {/* Text Content */}
             <div className="w-full md:w-1/2 mb-6 md:mb-0">
               <h3 className="text-3xl font-bold text-gray-900 mb-6 text-center md:text-left">
@@ -162,7 +167,7 @@ const TechRecruitmentPage = () => {
 
           {/* Why Choose us 1 */}
 
-          <section className="bg-gradient-to-r from-blue-50 via-teal-50 to-green-50 py-12 px-4 md:px-8 mt-8 rounded-lg shadow-lg">
+          <section className="bg-gradient-to-r from-blue-50 via-teal-50 to-green-50 py-12 px-4 md:px-8 mt-8 rounded-lg shadow-lg" data-aos="zoom-in-up">
             <div className="container mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
                 Discover Our Key Advantages
@@ -252,7 +257,7 @@ const TechRecruitmentPage = () => {
           </section>
 
           {/* Why Choose us 2 */}
-          <section class="p-5 bg-gradient-to-r from-blue-50 via-teal-50 to-green-50 rounded-lg shadow-lg max-w-8xl mx-auto mt-10 mb-8 flex flex-col md:flex-row items-center">
+          <section class="p-5 bg-gradient-to-r from-blue-50 via-teal-50 to-green-50 rounded-lg shadow-lg max-w-8xl mx-auto mt-10 mb-8 flex flex-col md:flex-row items-center"data-aos="zoom-in-up">
 
 
             <div class="flex-1 flex flex-col justify-center p-6">

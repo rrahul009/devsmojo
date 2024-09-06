@@ -17,13 +17,13 @@ const Carausel = () => {
                 `}
             </style>
             <Carousel
-            autoPlay={true}
-            infiniteLoop={true}
-            interval={5000}
-            stopOnHover={true}
+                autoPlay={true}
+                infiniteLoop={true}
+                interval={5000}
+                stopOnHover={true}
             >
                 {/* First slide */}
-                <div className='flex'>
+                <div className='flex '>
                     <div className="max-w-4xl mx-10 p-0">
                         <p className="text-5xl font-extrabold leading-[133%] mb-6">
                             Premium <span className="text-blue-600">IT Recruitment</span> through pre-vetted Software Profiles
@@ -32,7 +32,7 @@ const Carausel = () => {
                             Deploy best Talent to Most challenging Projects
                         </p>
                         <p className="text-xl text-gray-700 leading-7 mb-2">
-                            Cherry pick from 200K+ profiles of Industry Best <span className='text-black text-2xl'>Software professionals</span>
+                            Cherry pick from 200K+ profiles of Industry Best <span className='text-blue-500 font-bold text-2xl'>Software professionals</span>
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="p-6 rounded-lg text-start  ">

@@ -19,7 +19,7 @@ const Services = () => {
                 {/* Services Section */}
                 <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     {/* Custom Software Development */}
-                    <Link href="services">
+                    <Link href="techrecruit">
                         <div className="bg-white shadow-md p-5 rounded-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-xl duration-300">
                             <div className="flex justify-center p-2">
                                 <img
