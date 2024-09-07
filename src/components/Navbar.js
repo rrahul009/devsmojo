@@ -60,9 +60,11 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex-shrink-0">
-            <button className="px-3 mt-3 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-all duration-300 animate-shake">
+          <Link href="aboutus">
+          <button className="px-3 mt-3 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-all duration-300 animate-shake">
               Start a Conversation
             </button>
+          </Link>
           </div>
           {/* Uncomment and adjust if needed
           <div>

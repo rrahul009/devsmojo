@@ -4,6 +4,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { PhoneInTalk, Code, AppRegistration, Web, Cloud, Build } from '@mui/icons-material';
 import { initializeAOS } from '@/app/utils/Aos_setup';
 import Link from 'next/link';
+import ArtificalInteligence from './ArtificalInteligence';
 
 const Services = () => {
     useEffect(() => {
@@ -40,7 +41,9 @@ const Services = () => {
                         </div>
                     </Link>
 
-
+                  <section>
+                    hello
+                  </section>
 
 
                     {/* Mobile App */}

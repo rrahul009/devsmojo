@@ -2,6 +2,7 @@ import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import Link from 'next/link';
 
 const Carausel = () => {
     return (
@@ -17,7 +18,7 @@ const Carausel = () => {
                 `}
             </style>
             <Carousel
-                autoPlay={true}
+                // autoPlay={true}
                 infiniteLoop={true}
                 interval={5000}
                 stopOnHover={true}
@@ -32,30 +33,31 @@ const Carausel = () => {
                             Deploy best Talent to Most challenging Projects
                         </p>
                         <p className="text-xl text-gray-700 leading-7 mb-2">
-                            Cherry pick from 200K+ profiles of Industry Best <span className='text-blue-500 font-bold text-2xl'>Software professionals</span>
+                            {/* Cherry pick from 200K+ profiles of Industry Best <span className='text-blue-500 font-bold text-2xl'>Software professionals</span> */}
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="p-6 rounded-lg text-start  ">
                                 <h3 className="text-3xl font-bold text-black mb-2">
-                                    2500+
+                                    200K+
                                 </h3>
                                 <p className="text-lg text-black">
-                                    Verified software engineers in our database.
+                                    pre-verified resume of Software Professionals
                                 </p>
                             </div>
                             <div className="p-6 rounded-lg text-start ">
                                 <h3 className="text-3xl font-bold text-black mb-2">
-                                    83+
+                                    43+
                                 </h3>
-                                <p className="text-lg text-black">
-                                    Clients worldwide since 2015.
+                                <p className="text-lg text-black font-medium ">
+                                    profiles in latest trending and in-demand skill clusters
                                 </p>
                             </div>
                         </div>
-                        <button className="flex items-center border-2 border-black py-3 px-6 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-6">
-                            <span className="mr-2">Learn More</span>
-                            <ArrowDownwardIcon />
-                        </button>
+                        <Link href="aboutus">
+                            <button className="flex items-center border-2 border-black py-3 px-6 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-2">
+                                <span className="mr-2">Learn More</span>
+                                <ArrowDownwardIcon />
+                            </button></Link>
                     </div>
                     <div className='flex justify-center items-center flex-grow mt-15'>
                         <img src='https://sonatafy.com/wp-content/uploads/2023/04/software-development.png' alt='Recruitment' className='object-cover rounded-sm' style={{ width: '700px', height: '310px' }} />
@@ -76,28 +78,29 @@ const Carausel = () => {
                             <br />
                             <span className='text-md'>High-Touch: We build the entire thing, operate, and then transfer to you when you want it.</span>
                         </p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-2">
-                            <div className="p-6 rounded-lg ">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div className="p-6 rounded-lg text-start  ">
                                 <h3 className="text-3xl font-bold text-black mb-2">
-                                    2500+
+                                    200K+
                                 </h3>
-                                <p className="text-lg text-gray-700">
-                                    Verified software engineers in our database.
+                                <p className="text-lg text-black">
+                                    pre-verified resume of Software Professionals
                                 </p>
                             </div>
-                            <div className="p-6 rounded-lg ">
+                            <div className="p-6 rounded-lg text-start ">
                                 <h3 className="text-3xl font-bold text-black mb-2">
-                                    83+
+                                    43+
                                 </h3>
-                                <p className="text-lg text-gray-700">
-                                    Clients worldwide since 2015.
+                                <p className="text-lg text-black font-medium ">
+                                    profiles in latest trending and in-demand skill clusters
                                 </p>
                             </div>
                         </div>
-                        <button className="flex items-center border-2 border-black py-3 px-6 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-2">
-                            <span className="mr-2">Learn More</span>
-                            <ArrowDownwardIcon />
-                        </button>
+                        <Link href="aboutus">
+                            <button className="flex items-center border-2 border-black py-3 px-6 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-2">
+                                <span className="mr-2">Learn More</span>
+                                <ArrowDownwardIcon />
+                            </button></Link>
                     </div>
                     <div className='relative flex justify-center items-center mt-10 md:mt-0'>
                         <img src='https://www.oceansoftwares.com/assets/img/Services/customised.webp' alt='Recruitment' className='object-cover rounded-lg' style={{ width: '500px', height: '300px' }} />
@@ -120,7 +123,7 @@ const Carausel = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="p-6 rounded-lg text-start  ">
                                 <h3 className="text-3xl font-bold text-black mb-2">
-                                    2500+
+                                    200K+
                                 </h3>
                                 <p className="text-lg text-black">
                                     Verified software engineers in our database.
@@ -128,17 +131,18 @@ const Carausel = () => {
                             </div>
                             <div className="p-6 rounded-lg text-start ">
                                 <h3 className="text-3xl font-bold text-black mb-2">
-                                    83+
+                                    43+
                                 </h3>
                                 <p className="text-lg text-black">
                                     Clients worldwide since 2015.
                                 </p>
                             </div>
                         </div>
-                        <button className="flex items-center border-2 border-black py-3 px-6 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-6">
-                            <span className="mr-2">Learn More</span>
-                            {/* <ArrowDownwardIcon /> */}
-                        </button>
+                        <Link href="aboutus">
+                            <button className="flex items-center border-2 border-black py-3 px-6 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-2">
+                                <span className="mr-2">Learn More</span>
+                                <ArrowDownwardIcon />
+                            </button></Link>
                     </div>
                     <div className='flex justify-center items-center flex-grow mt-15'>
                         <img src='https://freedesignfile.com/upload/2018/10/Company-Product-Development-Group-Meeting-Stock-Photo-04.jpg' alt='Recruitment' className='object-cover rounded-sm' style={{ width: '700px', height: '300px' }} />

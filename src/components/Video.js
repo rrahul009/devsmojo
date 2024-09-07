@@ -33,7 +33,7 @@ export default function Video() {
                 </section>
 
                 {/* Call-to-Action */}
-                <section className="mt-2 py-12 bg-gray-300">
+                {/* <section className="mt-2 py-12 bg-gray-300">
                     <h2 className="text-3xl font-semibold text-gray-900 mb-6">Learn More About Our Services</h2>
                     <p className="text-lg text-gray-700 mb-6">
                         Explore our website to see how we can assist with your recruitment needs or contact us to get started.
@@ -41,7 +41,7 @@ export default function Video() {
                     <a href="mailto:contact@anbruchit.com" className="inline-block px-8 py-4 bg-blue-700 text-white rounded-lg shadow-md hover:bg-blue-800 transition-all duration-300">
                         Get in Touch
                     </a>
-                </section>
+                </section> */}
             </main>
         </div>
     );

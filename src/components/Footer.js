@@ -1,4 +1,5 @@
 // components/Footer.js
+import Link from 'next/link';
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
@@ -24,10 +25,10 @@ const Footer = () => {
           <div className="w-full md:w-1/4 mb-6">
             <h3 className="text-lg font-semibold mb-4">Navigation</h3>
             <ul>
-              <li><a href="#" className="text-gray-400 hover:text-white">Home</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Services</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Contact</a></li>
+              <li><Link href="/" className="text-gray-400 hover:text-white">Home</Link></li>
+              <li><Link href="aboutus" className="text-gray-400 hover:text-white">About Us</Link></li>
+              <li><Link href="services" className="text-gray-400 hover:text-white">Services</Link></li>
+              <li><Link href="aboutus" className="text-gray-400 hover:text-white">Contact</Link></li>
             </ul>
           </div>
 
@@ -35,12 +36,12 @@ const Footer = () => {
           <div className="w-full md:w-1/4 mb-6">
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/DevsMojotechnologies" className="text-gray-400 hover:text-white"><FaFacebookF /></a>
-              <a href="" className="text-gray-400 hover:text-white"><FaTwitter /></a>
-              <a href="https://www.linkedin.com/company/DevsMojo/?originalSubdomain=in" className="text-gray-400 hover:text-white"><FaLinkedinIn /></a>
-              <a href="https://www.instagram.com/DevsMojotechnologies/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+              {/* <a href="https://www.facebook.com/DevsMojotechnologies" className="text-gray-400 hover:text-white"><FaFacebookF /></a> */}
+              {/* <a href="" className="text-gray-400 hover:text-white"><FaTwitter /></a> */}
+              <a href="https://www.linkedin.com/company/devsmojo-technologies-private-limited/?viewAsMember=true" className="text-gray-400 hover:text-white"><FaLinkedinIn /></a>
+              {/* <a href="https://www.instagram.com/DevsMojotechnologies/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
                         <FaInstagram size={16} />
-                    </a>
+                    </a> */}
             </div>
           </div>
 

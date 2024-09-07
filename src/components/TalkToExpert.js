@@ -1,5 +1,6 @@
 'use client'
 import { initializeAOS } from '@/app/utils/Aos_setup';
+import Link from 'next/link';
 import React, { useEffect } from 'react';
 
 const TalkToExpert = () => {
@@ -25,7 +26,8 @@ const TalkToExpert = () => {
                     <div className="p-6">
                         <h3 className="text-2xl font-semibold text-blue-600 mb-1">How you can leverage AI</h3>
                         <p className="text-gray-700 mb-1">
-                            Whether you want to implement Classic ML or DNN, there is a significant cost of data handling and training your first AI model. Talk to our experts to maximize your chances of building a successful AI solution.
+                            Whether you want to implement Classic ML or DNN, there is a significant cost of data handling and training your first AI model.
+                             <br/><Link href="about"> <span className='text-green-600'>Talk to our experts</span> </Link>to maximize your chances of building a successful AI solution.
                         </p>
                         <ul className="list-disc list-inside pl-5 space-y-2">
                             <li className="text-gray-600">Automate repetitive tasks to save time.</li>
@@ -50,7 +52,9 @@ const TalkToExpert = () => {
                     <div className="p-6">
                         <h3 className="text-2xl font-semibold text-blue-600 mb-1">How you can fast track your MVP</h3>
                         <p className="text-gray-700 mb-1">
-                            Product market fit and cost management are the most essential levers for the success of a B2B or B2C product. We can partner in every aspect of this journey from defining the minimum feature set to organizing and planning launch events. Talk to our experts.
+                            Product market fit and cost management are the most essential levers for the success of a B2B or B2C product. 
+                            We can partner in every aspect of this journey from defining the minimum feature set to 
+                            organizing and planning launch events. <Link href="about"> <span className='text-green-600'>Talk to our experts</span> </Link>.
                         </p>
                         <ul className="list-disc list-inside pl-5 space-y-2">
                             <li className="text-gray-600">Define core features to focus on essential functionality.</li>
@@ -75,7 +79,10 @@ const TalkToExpert = () => {
                     <div className="p-6">
                         <h3 className="text-2xl font-semibold text-blue-600 mb-1">We can Market Research your next Product</h3>
                         <p className="text-gray-700 mb-1">
-                            A crisp minimum feature set of your product defines its positioning. Whether it is a new innovation, a premium offering, or a low-cost variant to attract value-seeking customers, we can strategize product feature research, design marketing collaterals, and track competition so you stay ahead in the game.
+                            A crisp minimum feature set of your product defines its positioning. Whether it is a new innovation,
+                             a premium offering, or a low-cost variant to attract value-seeking customers, 
+                             we can strategize product feature research, design marketing collaterals,
+                              and track competition so you stay ahead in the game  <Link href="about"> <span className='text-green-600'>Talk to our experts</span> </Link>.
                         </p>
                         <ul className="list-disc list-inside pl-5 space-y-2">
                             <li className="text-gray-600">Analyze market trends to identify opportunities.</li>
@@ -100,7 +107,10 @@ const TalkToExpert = () => {
                     <div className="p-6">
                         <h3 className="text-2xl font-semibold text-blue-600 mb-1">Learn about our Talent Selection process</h3>
                         <p className="text-gray-700 mb-4">
-                            When selecting technology professionals, we focus on hands-on capabilities and the recency of skills acquired. We can source experienced, hands-on software engineers like no one else in the market. Every candidate goes through multiple rounds of interaction with our experts before they meet your interview panel. Talk to our experts to know more, at no cost.
+                            When selecting technology professionals, we focus on hands-on capabilities and the recency of skills 
+                            acquired. We can source experienced, hands-on software engineers like no one else in the market
+                            . Every candidate goes through multiple rounds of interaction with our experts before they 
+                            meet your interview panel.<br/>  <Link href="about"> <span className='text-green-600'>Talk to our experts</span> </Link>to know more, at no cost.
                         </p>
                         <ul className="list-disc list-inside pl-5 space-y-2">
                             <li className="text-gray-600">Focus on hands-on capabilities and recent skills.</li>

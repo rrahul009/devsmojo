@@ -15,6 +15,10 @@ import DevOpsAndCloudInfrastructure from '@/components/DevOps';
 import CustomAppDevelopment from '@/components/DevOps';
 import CustomApp from '@/components/CustomApp';
 import { initializeAOS } from '../utils/Aos_setup';
+import PieChart from '@/components/PieChart';
+import ArtificalInteligence from '@/components/ArtificalInteligence';
+import Link from 'next/link';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 const ServicePage = () => {
   useEffect(() => {
     const cleanupAOS = initializeAOS();
@@ -42,25 +46,26 @@ const ServicePage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-2">
               <div className="p-6 rounded-lg ">
                 <h3 className="text-3xl font-bold text-black mb-2">
-                  2500+
+                  200K+
                 </h3>
                 <p className="text-lg text-gray-700">
-                  Verified software engineers in our database.
+                pre-verified resume of Software Professionals
                 </p>
               </div>
               <div className="p-6 rounded-lg ">
                 <h3 className="text-3xl font-bold text-black mb-2">
-                  83+
+                 43+
                 </h3>
                 <p className="text-lg text-gray-700">
-                  Clients worldwide since 2015.
+                profiles in latest trending and in-demand skill clusters.
                 </p>
               </div>
             </div>
-            <button className="flex items-center border-2 border-black py-3 px-6 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-2">
+          <Link href="aboutus">
+          <button className="flex items-center border-2 border-black py-3 px-6 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-2">
               <span className="mr-2">Learn More</span>
-              {/* <ArrowDownwardIcon /> */}
-            </button>
+              <ArrowDownwardIcon />
+            </button></Link>
           </div>
           <div className='relative flex justify-center items-center mt-10 md:mt-0'>
             <img src='https://www.oceansoftwares.com/assets/img/Services/customised.webp' alt='Recruitment' className='object-cover rounded-lg' style={{ width: '500px', height: '300px' }} />
@@ -83,25 +88,26 @@ const ServicePage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-6 rounded-lg text-start  ">
                 <h3 className="text-3xl font-bold text-black mb-2">
-                  2500+
+                  200K+
                 </h3>
                 <p className="text-lg text-black">
-                  Verified software engineers in our database.
+                pre-verified resume of Software Professionals
                 </p>
               </div>
               <div className="p-6 rounded-lg text-start ">
                 <h3 className="text-3xl font-bold text-black mb-2">
-                  83+
+                  43+
                 </h3>
                 <p className="text-lg text-black">
-                  Clients worldwide since 2015.
+                profiles in latest trending and in-demand skill clusters.
                 </p>
               </div>
             </div>
-            <button className="flex items-center border-2 border-black py-3 px-6 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-6">
+            <Link href="aboutus">
+          <button className="flex items-center border-2 border-black py-3 px-6 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-2">
               <span className="mr-2">Learn More</span>
-              {/* <ArrowDownwardIcon /> */}
-            </button>
+              <ArrowDownwardIcon />
+            </button></Link>
           </div>
           <div className='flex justify-center items-center flex-grow mt-15'>
             <img src='https://freedesignfile.com/upload/2018/10/Company-Product-Development-Group-Meeting-Stock-Photo-04.jpg' alt='Recruitment' className='object-cover rounded-sm' style={{ width: '700px', height: '300px' }} />
@@ -138,43 +144,48 @@ const ServicePage = () => {
 
         </div>
       </section>
+      <section>
+      <ArtificalInteligence/>
+      </section>
 
       {/* Mobile App  Android*/}
-      <section className="py-16 min-h-screen flex flex-col items-center" data-aos="zoom-in-up">
-        <div className="container mx-auto px-6 lg:px-12 text-center">
-          <h2 className="text-4xl font-bold mb-6">
-            Expertise in <span className="text-blue-600">Mobile Applications</span> Development
-          </h2>
-          <p className="text-lg text-gray-700 mb-12">
-            At <span className="text-blue-600 font-bold">DevsMojo</span>, we specialize in creating high-quality mobile applications for both Android and iOS platforms.
-          </p>
-          <div className="flex flex-col md:flex-row justify-center items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
-            {/* Android Development */}
-            <div className="bg-white p-6 rounded-lg shadow-lg flex-1 max-w-lg">
-              <h3 className="text-4xl font-semibold text-blue-800 text-start mb-4">Android Development</h3>
-              <p className="text-gray-700 mb-6">
-                We create feature-rich and responsive Android applications that provide an excellent user experience on all devices.
-              </p>
-              <h4 className="text-xl font-bold  mb-2 text-start">Technologies We Use:</h4>
-              <ul className="list-disc pl-5 text-gray-700 space-y-2 text-left">
-                <li><strong>Kotlin:</strong> Modern language for robust Android app development.</li>
-                <li><strong>Java:</strong> The classic language for Android apps, ensuring compatibility and performance.</li>
-                <li><strong>Android SDK:</strong> Essential tools and libraries for building Android apps.</li>
-                <li><strong>Firebase:</strong> A suite of cloud-based tools for app analytics, crash reporting, and authentication.</li>
-              </ul>
-            </div>
+      <section className="py-16 min-h-screen flex flex-col items-center w-full" data-aos="zoom-in-up">
+  <div className="container mx-auto px-6 lg:px-12 w-full">
+    <h2 className="text-4xl font-bold mb-6 text-center">
+      Expertise in <span className="text-blue-600">Mobile Applications</span> Development
+    </h2>
+    <p className="text-lg text-gray-700 mb-12 text-center">
+      At <span className="text-blue-600 font-bold">DevsMojo</span>, we specialize in creating high-quality mobile applications for both Android and iOS platforms.
+    </p>
+    <div className="flex flex-col md:flex-row justify-center items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
+      {/* Android Development */}
+      <div className="bg-white p-6 rounded-lg shadow-lg flex-1 max-w-lg">
+        <h3 className="text-4xl font-semibold text-blue-800 text-center md:text-start mb-4">Android Development</h3>
+        <p className="text-gray-700 mb-6">
+          We create feature-rich and responsive Android applications that provide an excellent user experience on all devices.
+        </p>
+        <h4 className="text-xl font-bold mb-2 text-center md:text-start">Technologies We Use:</h4>
+        <ul className="list-disc pl-5 text-gray-700 space-y-2 text-left">
+          <li><strong>Kotlin:</strong> Modern language for robust Android app development.</li>
+          <li><strong>Java:</strong> The classic language for Android apps, ensuring compatibility and performance.</li>
+          <li><strong>Android SDK:</strong> Essential tools and libraries for building Android apps.</li>
+          <li><strong>Firebase:</strong> A suite of cloud-based tools for app analytics, crash reporting, and authentication.</li>
+        </ul>
+      </div>
 
-            <div className="flex-shrink-0"data-aos="flip-right">
-              <img
-                src="https://www.dice.com/binaries/large/content/gallery/dice/insights/2020/07/shutterstock_1367732426.jpg"
-                alt="Android Development"
-                className="rounded-lg shadow-md"
-                style={{ width: '100%', maxWidth: '500px' }}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Image Section */}
+      <div className="flex-shrink-0" data-aos="flip-right">
+        <img
+          src="https://images.prismic.io//intuzwebsite/2caf3e7f-1704-42e2-908f-3d089da3e3ac_The+Ultimate+Guide+to+Android+App+Development.png?w=1200&q=75&auto=format,compress&fm=png8"
+          alt="Android Development"
+          className="rounded-lg shadow-md w-full h-auto"
+          style={{ maxWidth: '500px', height: '380px' }}
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Mobile app IOS */}
       <section className="py-16 min-h-screen flex flex-col items-center"data-aos="zoom-in-up">
@@ -186,7 +197,7 @@ const ServicePage = () => {
                 src="https://www.patnarepair.com/x_images/medias/1619437487ios_apps_development.jpg"
                 alt="iOS Development"
                 className="rounded-lg shadow-md"
-                style={{ width: '100%', maxWidth: '500px', height: '300px', marginTop: '20px' }}
+                style={{ width: '100%', maxWidth: '500px', height: '400px', marginTop: '20px' }}
               />
             </div>
 
@@ -270,16 +281,6 @@ const ServicePage = () => {
    <WebDevelopmentCard/>
    <DevOpsAndCloudInfrastructure/>
     <CustomApp/>
-
-
-
-
-
-
-
-
-
-
       <Footer />
     </div>
   );

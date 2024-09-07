@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
+import Schedular from '@/components/Schedular';
 import { Button } from '@mui/material';
 import React from 'react';
 
@@ -78,7 +79,7 @@ const MeetOurTeam = () => {
       </section>
 
       {/* our Team */}
-      <section className="bg-gray-100 py-10">
+      {/* <section className="bg-gray-100 py-10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="text-4xl font-extrabold text-gray-800 mb-4">Meet Our Team</h2>
@@ -107,40 +108,9 @@ const MeetOurTeam = () => {
             ))}
           </div>
         </div>
-      </section>
-      {/* employee image */}
-      <section className="py-10 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-between gap-4">
-            {/* First row of images */}
-            <div className="flex-1 flex justify-center items-center mb-4">
-              <img
-                src="https://media.istockphoto.com/id/1436951314/photo/business-woman-talking-to-her-colleagues-during-a-meeting-in-a-boardroom.jpg?s=612x612&w=0&k=20&c=D3IZJj-KqWmsPC6GNcTeno_qrBr6DGubIEMvBw98YBE="
-                alt="Business Meeting"
-                className="w-full h-auto object-cover rounded-lg shadow-md"
-                style={{ height: '300px' }}
-              />
-            </div>
-            <div className="flex-1 flex justify-center items-center mb-4">
-              <img
-                src="https://media.istockphoto.com/id/1395144844/photo/diverse-businesspeople-smiling-cheerfully-during-an-office-meeting.jpg?s=612x612&w=0&k=20&c=CyT1uzESfAkVuQcsSELl08OR5_sZgQVECArbCWcM92w="
-                alt="Diverse Businesspeople"
-                className="w-full h-auto object-cover rounded-lg shadow-md"
-                style={{ height: '300px' }}
-
-              />
-            </div>
-
-          </div>
-          <div className="flex justify-center">
-            <img
-              src="https://cdn.sanity.io/images/k34k3zzn/production/f26e5af6dece82601ff533db42a718b62c3394a5-1140x675.png?w=1536&h=910&auto=format"
-              alt="Large Group"
-              className="w-full  object-cover rounded-lg shadow-md" style={{ height: '300px' }}
-            />
-          </div>
-        </div>
-      </section>
+      </section> */}
+      <Schedular/>
+     
 
 
       <Footer />

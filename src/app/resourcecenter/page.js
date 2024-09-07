@@ -11,9 +11,9 @@ const ResourceCenterPage = () => {
         <div className="max-w-7xl mx-auto bg-white p-8 rounded-lg shadow-lg border border-gray-200 flex flex-col md:flex-row">
           {/* Text Content */}
           <div className="flex-1 p-6 md:p-8 flex flex-col justify-center">
-            <h1 className="text-4xl font-extrabold text-blue-600 mb-6 text-center md:text-left">Resource Center</h1>
+            {/* <h1 className="text-4xl font-extrabold text-blue-600 mb-6 text-center md:text-left">Resource Center</h1> */}
             <p className="text-lg text-gray-800 mb-8 leading-relaxed">
-              We use Earned Value Management System (EVMS) for tracking Schedule and Cost slippages in a Project, where requirements are well understood at the onset and design and architecture can be drafted in good detail.
+              We use<span className='text-blue-600 text-xl'> Earned Value Management System (EVMS)</span> for tracking Schedule and Cost slippages in a Project, where requirements are well understood at the onset and design and architecture can be drafted in good detail.
             </p>
             <h2 className="text-3xl font-semibold text-gray-900 mb-6">Advantages of Earned Value Management System:</h2>
             <ul className="list-disc list-inside text-gray-700 space-y-3 mb-8">
@@ -68,7 +68,8 @@ const ResourceCenterPage = () => {
               <img
                 src="https://static.javatpoint.com/difference/images/agile-vs-waterfall-model.png"
                 alt="Agile vs Waterfall"
-                className="w-full max-w-xs rounded-lg shadow-md"
+                className="w-full  rounded-lg shadow-md"
+                style={{height:'400px'}}
               />
             </div>
           </div>
