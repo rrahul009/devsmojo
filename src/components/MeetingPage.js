@@ -10,7 +10,7 @@ const MeetingPage = () => {
         <div className="absolute inset-0">
           <img
             src="https://your-background-image-url.jpg" // Replace with your background image URL
-            alt="Background"
+            // alt="Background"
             className="w-full h-full object-cover opacity-60" // Adjust opacity to ensure readability
           />
         </div>
