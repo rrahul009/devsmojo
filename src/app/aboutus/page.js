@@ -4,28 +4,28 @@ import Schedular from '@/components/Schedular';
 import { Button } from '@mui/material';
 import React from 'react';
 
-const teamMembers = [
-  {
-    name: 'John Doe',
-    role: 'Lead Developer',
-    imageUrl: 'https://static4.depositphotos.com/1000816/514/i/450/depositphotos_5140926-stock-photo-closeup-of-employee-in-the.jpg'
-  },
-  {
-    name: 'Jane Smith',
-    role: 'Project Manager',
-    imageUrl: 'https://img.freepik.com/free-photo/portrait-happy-manager-holding-leather-case_1262-5329.jpg'
-  },
-  {
-    name: 'Alex Johnson',
-    role: 'UI/UX Designer',
-    imageUrl: 'https://t4.ftcdn.net/jpg/02/07/68/43/360_F_207684339_dFUUI0leWvNaKJR6Da0ZswUhLI4YzIGT.webp'
-  },
-  {
-    name: 'Emily Davis',
-    role: 'Marketing Specialist',
-    imageUrl: 'https://photos.peopleimages.com/picture/202303/2676077-professional-smile-and-portrait-of-asian-man-in-office-for-executive-confident-and-pride.-development-corporate-and-growth-with-male-employee-in-agency-for-management-expert-and-director-fit_400_400.jpg'
-  }
-];
+// const teamMembers = [
+//   {
+//     name: 'John Doe',
+//     role: 'Lead Developer',
+//     imageUrl: 'https://static4.depositphotos.com/1000816/514/i/450/depositphotos_5140926-stock-photo-closeup-of-employee-in-the.jpg'
+//   },
+//   {
+//     name: 'Jane Smith',
+//     role: 'Project Manager',
+//     imageUrl: 'https://img.freepik.com/free-photo/portrait-happy-manager-holding-leather-case_1262-5329.jpg'
+//   },
+//   {
+//     name: 'Alex Johnson',
+//     role: 'UI/UX Designer',
+//     imageUrl: 'https://t4.ftcdn.net/jpg/02/07/68/43/360_F_207684339_dFUUI0leWvNaKJR6Da0ZswUhLI4YzIGT.webp'
+//   },
+//   {
+//     name: 'Emily Davis',
+//     role: 'Marketing Specialist',
+//     imageUrl: 'https://photos.peopleimages.com/picture/202303/2676077-professional-smile-and-portrait-of-asian-man-in-office-for-executive-confident-and-pride.-development-corporate-and-growth-with-male-employee-in-agency-for-management-expert-and-director-fit_400_400.jpg'
+//   }
+// ];
 
 const MeetOurTeam = () => {
   return (
