@@ -7,13 +7,13 @@ const MeetingPage = () => {
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
       <div className="flex flex-col md:flex-row w-full max-w-6xl bg-white rounded-lg shadow-lg relative overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-0">
+        {/* <div className="absolute inset-0">
           <img
             src="https://your-background-image-url.jpg" // Replace with your background image URL
             // alt="Background"
             className="w-full h-full object-cover opacity-60" // Adjust opacity to ensure readability
           />
-        </div>
+        </div> */}
 
         {/* Content Overlay */}
         <div className="relative flex flex-col md:flex-row w-full bg-white bg-opacity-80 rounded-lg shadow-lg z-10">
