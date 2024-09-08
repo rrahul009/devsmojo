@@ -54,7 +54,7 @@ const PitchSection = () => {
 
             <div className="p-12 bg-white rounded-lg shadow-md" style={{ fontFamily: "sans-serif" }} data-aos="zoom-in-up" >
                 <section className="mb-12">
-                    <h1 className="text-4xl font-bold text-center mb-2  text-blue-600">Pre-Vetted Resume</h1>
+                    <h1 className="text-4xl font-bold text-center mb-2  text-blue-600">"Why Choose our Pre-Vetted...”</h1>
                     <div className="flex flex-col md:flex-row items-start md:items-center md:space-x-8 space-y-6 md:space-y-0">
                         <div className="flex-1 md:w-1/2 mb-2 md:mb-0 space-x-5">
                             {/* <h2 className="text-3xl font-bold text-blue-600 mb-4 ml-5">Stand Out in the Job Market</h2> */}

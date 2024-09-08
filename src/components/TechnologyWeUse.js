@@ -12,7 +12,7 @@ const TechnologiesSection = () => {
 
     return (
         <div className="p-8 bg-gray-100 min-h-screen mt-5" data-aos="zoom-in-up">
-            <h2 className="text-4xl font-bold text-center mb-4 text-gray-800">Technologies We Work On</h2>
+            <h2 className="text-4xl font-bold text-center mb-4 text-blue-600">Technology Solutions We Provide</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* AI Section */}
                 <div className="bg-white p-6 rounded-lg shadow-lg flex items-start space-x-4 transition-transform transform hover:scale-105" data-aos="zoom-in-up">
