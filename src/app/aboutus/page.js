@@ -2,6 +2,7 @@ import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import Schedular from '@/components/Schedular';
 import { Button } from '@mui/material';
+import Link from 'next/link';
 import React from 'react';
 
 // const teamMembers = [
@@ -35,14 +36,16 @@ const MeetOurTeam = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">
             {/* Text Section */}
-            <div className="flex-1 p-6 md:p-10 bg-white shadow-lg rounded-lg">
+            <div className="flex-1 p-6 md:p-10 rounded-lg">
               <h2 className="text-4xl font-extrabold text-gray-800 mb-4">ABOUT US</h2>
               <p className="text-md text-gray-600 mb-6">
-                At DevsMojo, we are dedicated to transforming your vision into reality through innovative and cutting-edge technology solutions. With a team of skilled professionals, we specialize in custom app development, cloud services, and digital transformation to drive your business forward. Our mission is to deliver exceptional quality and value by harnessing the latest technology trends and providing tailored solutions that meet your unique needs. From ideation to execution, we work closely with you to ensure every project is a success, helping you stay ahead in a rapidly evolving digital landscape.
+                At <span className='font-bold text-xl text-blue-600'>DevsMojo</span>, we are dedicated to transforming your vision into reality through innovative and cutting-edge technology solutions. With a team of skilled professionals, we specialize in custom app development, cloud services, and digital transformation to drive your business forward. Our mission is to deliver exceptional quality and value by harnessing the latest technology trends and providing tailored solutions that meet your unique needs. From ideation to execution, we work closely with you to ensure every project is a success, helping you stay ahead in a rapidly evolving digital landscape.
               </p>
-              <Button variant="contained" color="primary" className="transition-transform transform hover:scale-105 p-3">
+           <Link href="/aboutus/#schedular">
+           <Button variant="contained" color="primary" className="transition-transform transform hover:scale-105 p-3">
                 Learn More
               </Button>
+           </Link>
             </div>
 
             {/* Image Section */}

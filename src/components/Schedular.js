@@ -34,7 +34,7 @@ const Schedular = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+    <div id="schedular" className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
       <div className="flex flex-col md:flex-row w-full max-w-6xl bg-white rounded-lg p-5">
         {/* Image Section */}
         <div className="md:w-1/2 flex justify-center items-center">

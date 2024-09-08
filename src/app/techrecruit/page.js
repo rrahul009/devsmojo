@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import React, { useEffect } from 'react';
 import { initializeAOS } from '../utils/Aos_setup';
+import Link from 'next/link';
 // import ServerIcon from '@mui/icons-material/Server';
 // import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 // import CodeIcon from '@mui/icons-material/Code';
@@ -244,12 +245,12 @@ const TechRecruitmentPage = () => {
                     <p className="text-gray-800 mb-4 text-lg font-semibold">
                       Send a message <span className="text-blue-600 underline">here</span> to explore.
                     </p>
-                    <a
-                      href="mailto:general@devsmojo.com"
+                    <Link
+                      href="/aboutus/#schedular"
                       className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-colors duration-300"
                     >
                       Contact Us
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

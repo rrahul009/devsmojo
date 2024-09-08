@@ -60,7 +60,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex-shrink-0">
-          <Link href="aboutus">
+          <Link href="/aboutus/#schedular">
           <button className="px-3 mt-3 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-all duration-300 animate-shake">
               Start a Conversation
             </button>

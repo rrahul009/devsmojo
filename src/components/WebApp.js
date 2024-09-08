@@ -11,23 +11,47 @@ import { initializeAOS } from '@/app/utils/Aos_setup';
 const webAppTypes = [
   {
     title: 'E-commerce Platforms',
-    description: 'Custom-built e-commerce solutions with integrated payment gateways, product management, and customer support features.',
-    icon: <ShoppingCartIcon className="h-12 w-12 text-blue-500" />
+    icon: <ShoppingCartIcon className="h-12 w-12 text-blue-600" />,  // Changed color
+    titleColor: 'text-blue-700',  // Title color
+    points: [
+      'Integrated payment gateways',
+      'Product management systems',
+      'Customer support features',
+      'Custom checkout processes'
+    ]
   },
   {
     title: 'Content Management Systems (CMS)',
-    description: 'Flexible CMS solutions for managing website content, media, and user roles efficiently.',
-    icon: <ArticleIcon className="h-12 w-12 text-blue-500" />
+    icon: <ArticleIcon className="h-12 w-12 text-green-600" />,  // Changed color
+    titleColor: 'text-green-700',  // Title color
+    points: [
+      'Flexible content management',
+      'Media management tools',
+      'User role management',
+      'Customizable templates'
+    ]
   },
   {
     title: 'Custom Dashboards',
-    description: 'Interactive dashboards for visualizing data and metrics, tailored to your business requirements.',
-    icon: <DashboardIcon className="h-12 w-12 text-blue-500" />
+    icon: <DashboardIcon className="h-12 w-12 text-red-600" />,  // Changed color
+    titleColor: 'text-red-700',  // Title color
+    points: [
+      'Interactive data visualization',
+      'Custom metrics tracking',
+      'Real-time updates',
+      'User-specific dashboards'
+    ]
   },
   {
     title: 'Web Applications',
-    description: 'Custom web apps designed to streamline processes and enhance user experience, based on your specific needs.',
-    icon: <AppsIcon className="h-12 w-12 text-blue-500" />
+    icon: <AppsIcon className="h-12 w-12 text-purple-600" />,  // Changed color
+    titleColor: 'text-purple-700',  // Title color
+    points: [
+      'Custom user experiences',
+      'Streamlined processes',
+      'Integration with existing systems',
+      'Scalable architecture'
+    ]
   }
 ];
 
@@ -36,40 +60,46 @@ const WebDevelopmentCard = () => {
         const cleanupAOS = initializeAOS();
         return cleanupAOS; // Cleanup AOS on unmount
     }, []);
-  return (
-    <section className="bg-white py-12"data-aos="zoom-in-up">
-      <div className="container mx-auto px-4">
-        <div className="bg-white shadow-lg rounded-lg p-8 mb-8 max-w-6xl ">
-          <div className="text-center mb-6">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">
-              Web Development
-            </h2>
-            <p className="text-xl text-gray-700">
-              Our web development services are designed to create stunning, high-performance websites that meet your business needs.
-            </p>
-          </div>
-          <div className="flex flex-wrap justify-center gap-8">
-            {webAppTypes.map((app, index) => (
-              <div
-                key={index}
-                className="bg-white shadow-lg rounded-lg p-8 w-full sm:w-96 lg:w-1/3 transition-transform transform hover:scale-105"
-              >
-                <div className="flex items-center mb-6">
-                  {app.icon}
-                  <h3 className="text-2xl font-semibold text-gray-800 ml-4">
-                    {app.title}
-                  </h3>
+  
+    return (
+        <section id="web-development" className="bg-white py-2">
+            <div className="container mx-auto px-4 md:px-8"data-aos="zoom-in-up">
+                <div className="bg-white shadow-lg rounded-lg p-8 mb-8">
+                    <div className="text-center mb-6">
+                        <h2 className="text-4xl font-bold text-blue-600 mb-4">
+                            Web Development
+                        </h2>
+                        <p className="text-md text-gray-700">
+                            Our web development services are designed to create stunning, high-performance websites that meet your business needs.
+                        </p>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        {webAppTypes.map((app, index) => (
+                            <div
+                                key={index}
+                                className="bg-white shadow-lg rounded-lg p-8 flex items-start justify-between transition-transform transform hover:scale-105"
+                                data-aos="zoom-in-up"
+                            >
+                                <div className="flex-1 pr-8">
+                                    <h3 className={`text-2xl font-semibold ${app.titleColor} mb-2`}>
+                                        {app.title}
+                                    </h3>
+                                    <ul className="list-disc list-inside text-gray-600 mb-4">
+                                        {app.points.map((point, idx) => (
+                                            <li key={idx}>{point}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div className="flex-shrink-0">
+                                    {app.icon}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-                <p className="text-gray-600">
-                  {app.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+            </div>
+        </section>
+    );
 };
 
 export default WebDevelopmentCard;

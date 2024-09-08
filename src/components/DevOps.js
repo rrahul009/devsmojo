@@ -10,22 +10,42 @@ import { initializeAOS } from '@/app/utils/Aos_setup';
 const devOpsServices = [
     {
         title: 'Cloud Migration',
-        description: 'Seamless migration of applications and data to the cloud with minimal disruption and maximum efficiency.',
+        description: [
+            'Seamless migration of applications and data to the cloud.',
+            'Minimize disruption during the transition.',
+            'Ensure maximum efficiency in data handling.',
+            'Optimize cloud resource usage for cost savings.'
+        ],
         icon: <CloudIcon className="h-12 w-12 text-blue-500" />
     },
     {
         title: 'CI/CD Pipelines',
-        description: 'Automated Continuous Integration and Continuous Deployment pipelines to accelerate development cycles and ensure quality.',
+        description: [
+            'Automated pipelines for Continuous Integration and Deployment.',
+            'Accelerate development cycles with automation.',
+            'Ensure high quality through automated testing.',
+            'Improve deployment consistency and reliability.'
+        ],
         icon: <BuildIcon className="h-12 w-12 text-blue-500" />
     },
     {
         title: 'Infrastructure as Code',
-        description: 'Manage and provision infrastructure through code to improve consistency, reliability, and scalability.',
+        description: [
+            'Manage infrastructure through code for consistency.',
+            'Provision and configure resources automatically.',
+            'Improve reliability and scalability of infrastructure.',
+            'Enable version control for infrastructure changes.'
+        ],
         icon: <CodeIcon className="h-12 w-12 text-blue-500" />
     },
     {
         title: 'Cloud Storage Solutions',
-        description: 'Secure and scalable storage solutions for your cloud infrastructure, ensuring data availability and durability.',
+        description: [
+            'Secure storage for cloud-based data.',
+            'Ensure data availability and durability.',
+            'Scalable solutions to meet growing data needs.',
+            'Implement effective data backup and recovery strategies.'
+        ],
         icon: <StorageIcon className="h-12 w-12 text-blue-500" />
     }
 ];
@@ -36,22 +56,23 @@ const DevOpsAndCloudInfrastructure = () => {
         return cleanupAOS; // Cleanup AOS on unmount
     }, []);
     return (
-        <section className="bg-gray-100"data-aos="zoom-in-up">
-            <div className="container mx-auto px-4">
+        <section className="bg-gray-100 p-5" data-aos="zoom-in-up">
+            <div  className="container mx-auto px-4">
                 <div className="bg-white shadow-lg rounded-lg p-5 mb-5 max-w-7xl mx-auto">
-                    <div className="text-center mb-6 p-5">
-                        <h2 className="text-4xl font-bold text-gray-800 mb-4">
+                    <div id="cloud-computing"  className="text-center mb-6 p-2">
+                        <h2 className="text-4xl font-bold text-blue-600 mb-4">
                             DevOps and Cloud Infrastructure
                         </h2>
-                        <p className="text-xl text-gray-700">
+                        <p className="text-md text-gray-700">
                             Our DevOps and Cloud Infrastructure services streamline your operations and enhance your cloud capabilities for improved performance and scalability.
                         </p>
                     </div>
-                    <div className="flex flex-wrap -mx-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         {devOpsServices.map((service, index) => (
                             <div
                                 key={index}
-                                className="bg-white shadow-lg rounded-lg p-8 w-full sm:w-1/2 lg:w-1/2 xl:w-1/2 px-4 mb-8 transition-transform transform hover:scale-105"
+                                className="bg-white shadow-lg rounded-lg p-8 transition-transform transform hover:scale-105"
+                                data-aos="zoom-in-up"
                             >
                                 <div className="flex items-center mb-6">
                                     {service.icon}
@@ -59,9 +80,13 @@ const DevOpsAndCloudInfrastructure = () => {
                                         {service.title}
                                     </h3>
                                 </div>
-                                <p className="text-gray-600">
-                                    {service.description}
-                                </p>
+                                <ul className="list-disc pl-5 text-gray-600">
+                                    {service.description.map((point, i) => (
+                                        <li key={i} className="mb-2">
+                                            {point}
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                         ))}
                     </div>

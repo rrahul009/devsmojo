@@ -52,13 +52,13 @@ const PitchSection = () => {
             </div>
             {/* 2nd card */}
 
-            <div className="p-12 bg-white rounded-lg shadow-md" style={{ fontFamily: "sans-serif" }} data-aos="zoom-in-up" >
+            <div className="p-5 mt-5 bg-white rounded-lg shadow-md" style={{ fontFamily: "sans-serif" }} data-aos="zoom-in-up" >
                 <section className="mb-12">
                     <h1 className="text-4xl font-bold text-center mb-2  text-blue-600">"Why Choose our Pre-Vetted...”</h1>
                     <div className="flex flex-col md:flex-row items-start md:items-center md:space-x-8 space-y-6 md:space-y-0">
                         <div className="flex-1 md:w-1/2 mb-2 md:mb-0 space-x-5">
                             {/* <h2 className="text-3xl font-bold text-blue-600 mb-4 ml-5">Stand Out in the Job Market</h2> */}
-                            <section className="mt-12">
+                            <section className="mt-1">
                                 {/* <h2 className="text-3xl font-bold text-blue-600 mb-4 ml-5">Why Choose Our Pre-Vetted Resume Service?</h2> */}
                                 <ul className="space-y-5 ml-5">
                                     <li className="flex ">
@@ -82,12 +82,12 @@ const PitchSection = () => {
                                 </ul>
                             </section>
                         </div>
-                        <div className="flex-shrink-0 md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0">
+                        <div className="flex-shrink-0 md:w-1/2 flex justify-center md:justify-center mt-1 md:mt-0">
                             <img
                                 src="https://www.apollotechnical.com/wp-content/uploads/2021/10/resume-writing-scaled-1.jpg"
                                 alt="Software Consulting"
                                 className="object-fill"
-                                style={{ height: '450px' }}
+                                style={{ height: '400px' }}
                             />
                         </div>
                     </div>

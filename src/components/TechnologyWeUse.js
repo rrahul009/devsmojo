@@ -1,13 +1,13 @@
 'use client'
-import { initializeAOS } from '@/app/utils/Aos_setup';
 import React, { useEffect } from 'react';
-import { FaRobot, FaServer, FaDatabase, FaCloud, FaMobileAlt, FaCode, FaTools } from 'react-icons/fa'; // Import only the icons used
-import Link from 'next/link'; // Import Next.js Link
+import { FaRobot, FaServer, FaDatabase, FaCloud, FaMobileAlt, FaCode, FaTools } from 'react-icons/fa'; 
+import Link from 'next/link';
+import { initializeAOS } from '@/app/utils/Aos_setup';
 
 const TechnologiesSection = () => {
     useEffect(() => {
         const cleanupAOS = initializeAOS();
-        return cleanupAOS; // Cleanup AOS on unmount
+        return cleanupAOS; 
     }, []);
 
     return (
@@ -24,7 +24,7 @@ const TechnologiesSection = () => {
                             <li className="text-gray-600">Automates repetitive tasks</li>
                             <li className="text-gray-600">Enhances user experiences</li>
                         </ul>
-                        <Link href="/services" className="text-blue-500 hover:underline">
+                        <Link href="/services#ai" className="text-blue-500 hover:underline">
                             Learn more
                         </Link>
                     </div>
@@ -43,7 +43,7 @@ const TechnologiesSection = () => {
                             <li className="text-gray-600">High performance</li>
                             <li className="text-gray-600">Secure data handling</li>
                         </ul>
-                        <Link href="/services" className="text-blue-500 hover:underline">
+                        <Link href="/services#backend" className="text-blue-500 hover:underline">
                             Learn more
                         </Link>
                     </div>
@@ -53,7 +53,7 @@ const TechnologiesSection = () => {
                 </div>
 
                 {/* Database Section */}
-                <div className="bg-white p-6 rounded-lg shadow-lg flex items-start space-x-4 transition-transform transform hover:scale-105" data-aos="zoom-in-up">
+                <div id="" className="bg-white p-6 rounded-lg shadow-lg flex items-start space-x-4 transition-transform transform hover:scale-105" data-aos="zoom-in-up">
                     <div className="flex-1">
                         <h3 className="text-2xl font-semibold text-red-600 mb-2">Database</h3>
                         <p className="text-gray-700 mb-2">Manage and optimize your data with advanced database technologies.</p>
@@ -62,7 +62,7 @@ const TechnologiesSection = () => {
                             <li className="text-gray-600">Advanced querying capabilities</li>
                             <li className="text-gray-600">Reliable data storage</li>
                         </ul>
-                        <Link href="/services" className="text-blue-500 hover:underline">
+                        <Link href="/services#backend" className="text-blue-500 hover:underline">
                             Learn more
                         </Link>
                     </div>
@@ -81,7 +81,7 @@ const TechnologiesSection = () => {
                             <li className="text-gray-600">Flexible resource allocation</li>
                             <li className="text-gray-600">Enhanced collaboration</li>
                         </ul>
-                        <Link href="/services" className="text-blue-500 hover:underline">
+                        <Link href="/services#cloud-computing" className="text-blue-500 hover:underline">
                             Learn more
                         </Link>
                     </div>
@@ -100,7 +100,7 @@ const TechnologiesSection = () => {
                             <li className="text-gray-600">Enhanced user engagement</li>
                             <li className="text-gray-600">Access to native features</li>
                         </ul>
-                        <Link href="/services" className="text-blue-500 hover:underline">
+                        <Link href="/services#mobile-development" className="text-blue-500 hover:underline">
                             Learn more
                         </Link>
                     </div>
@@ -119,7 +119,7 @@ const TechnologiesSection = () => {
                             <li className="text-gray-600">Interactive features</li>
                             <li className="text-gray-600">SEO optimization</li>
                         </ul>
-                        <Link href="/services" className="text-blue-500 hover:underline">
+                        <Link href="/services#web-development" className="text-blue-500 hover:underline">
                             Learn more
                         </Link>
                     </div>
@@ -138,7 +138,7 @@ const TechnologiesSection = () => {
                             <li className="text-gray-600">Improved collaboration</li>
                             <li className="text-gray-600">Automated processes</li>
                         </ul>
-                        <Link href="/services" className="text-blue-500 hover:underline">
+                        <Link href="/services#cloud-computing" className="text-blue-500 hover:underline">
                             Learn more
                         </Link>
                     </div>

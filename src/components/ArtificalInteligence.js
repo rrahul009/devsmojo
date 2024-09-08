@@ -24,8 +24,8 @@ const ArtificalInteligence = () => {
     ];
 
     return (
-        <div className="p-8 bg-gray-100 rounded-lg shadow-lg mt-8">
-            <section className="max-w-6xl mx-auto mb-12">
+        <div className="p-5  rounded-lg shadow-lg mt-8">
+            <section  id="ai" className=" mx-auto mb-12">
                 {/* Image and Text Section */}
                 <div className="p-8 rounded-lg bg-white shadow-lg">
                     <div className="flex flex-col md:flex-row items-start md:items-center md:space-x-8 space-y-6 md:space-y-0">
@@ -39,36 +39,36 @@ const ArtificalInteligence = () => {
                         </div>
                         {/* Text Section */}
                         <div className="flex-1 md:w-1/2 mb-6 md:mb-0 space-y-6">
-                            <h1 className="text-3xl font-extrabold text-blue-600 mb-6">Why Invest in AI?</h1>
+                            <h1 className="text-3xl font-extrabold text-black mb-6">Why Invest in AI?</h1>
                             <ul className="space-y-4">
                                 <li className="flex items-start space-x-3">
-                                    <FaCheck className="text-blue-600 text-2xl" />
+                                    <FaCheck className="text-blue-600 text-xl" />
                                     <span>
-                                        <strong className="font-semibold">Improve Efficiency:</strong> Automate repetitive tasks and optimize processes to save time and resources.
+                                        <strong className="font-bold">Improve Efficiency:</strong> Automate repetitive tasks and optimize processes to save time and resources.
                                     </span>
                                 </li>
                                 <li className="flex items-start space-x-3">
-                                    <FaCheck className="text-blue-600 text-2xl" />
+                                    <FaCheck className="text-blue-600 text-xl" />
                                     <span>
-                                        <strong className="font-semibold">Data-Driven Decisions:</strong> Utilize AI to analyze data and generate insights for better decision-making.
+                                        <strong className="font-bold">Data-Driven Decisions:</strong> Utilize AI to analyze data and generate insights for better decision-making.
                                     </span>
                                 </li>
                                 <li className="flex items-start space-x-3">
-                                    <FaCheck className="text-blue-600 text-2xl" />
+                                    <FaCheck className="text-blue-600 text-xl" />
                                     <span>
-                                        <strong className="font-semibold">Innovate Your Business:</strong> Leverage AI technologies to develop new products and services.
+                                        <strong className="font-bold">Innovate Your Business:</strong> Leverage AI technologies to develop new products and services.
                                     </span>
                                 </li>
                                 <li className="flex items-start space-x-3">
-                                    <FaCheck className="text-blue-600 text-2xl" />
+                                    <FaCheck className="text-blue-600 text-xl" />
                                     <span>
                                         <strong className="font-semibold">Enhance Customer Engagement:</strong> Use AI to personalize customer interactions and improve engagement.
                                     </span>
                                 </li>
                                 <li className="flex items-start space-x-3">
-                                    <FaCheck className="text-blue-600 text-2xl" />
+                                    <FaCheck className="text-blue-600 text-xl" />
                                     <span>
-                                        <strong className="font-semibold">Reduce Operational Costs:</strong> Implement AI-driven solutions to streamline operations and reduce costs.
+                                        <strong className="font-bold">Reduce Operational Costs:</strong> Implement AI-driven solutions to streamline operations and reduce costs.
                                     </span>
                                 </li>
                             </ul>
