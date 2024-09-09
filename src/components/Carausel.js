@@ -24,9 +24,9 @@ const Carausel = () => {
                 stopOnHover={true}
             >
                 {/* First slide */}
-                <div className='flex '>
+                <div className='flex p-8 ' style={{backgroundColor:"rgb(196, 208, 212)"}}>
                     <div className="max-w-4xl mx-10 p-0">
-                        <p className="text-5xl font-extrabold leading-[133%] mb-6">
+                        <p className="text-4xl font-bold leading-[133%] mb-6">
                             Premium <span className="text-blue-600">IT Recruitment</span> through pre-vetted Software Profiles
                         </p>
                         <p className="text-xl font-semibold leading-[133%] mb-4">
@@ -46,7 +46,7 @@ const Carausel = () => {
                             </div>
                             <div className="p-6 rounded-lg text-start ">
                                 <h3 className="text-3xl font-bold text-black mb-2">
-                                    43+
+                                    43%
                                 </h3>
                                 <p className="text-lg text-black font-medium ">
                                     profiles in latest trending and in-demand skill clusters
@@ -60,15 +60,16 @@ const Carausel = () => {
                             </button></Link>
                     </div>
                     <div className='flex justify-center items-center flex-grow mt-15'>
-                        <img src='https://sonatafy.com/wp-content/uploads/2023/04/software-development.png' alt='Recruitment' className='object-cover rounded-sm' style={{ width: '700px', height: '310px' }} />
+                        {/* <img src='https://sonatafy.com/wp-content/uploads/2023/04/software-development.png' alt='Recruitment' className='object-cover rounded-sm' style={{ width: '700px', height: '310px' }} /> */}
+                        <img src='/image (5).png' alt='Recruitment' className='object-cover rounded-sm' style={{ width: '900px', height: '350px' }} />
                     </div>
                 </div>
 
                 {/* second slide */}
                 <div className='bg-white flex flex-col md:flex-row items-center justify-between py-2 px-2 md:px-2'>
                     <div className="max-w-6xl p-2">
-                        <p className="text-5xl font-extrabold leading-tight mb-2">
-                            <span className="text-blue-800">Software Development Services</span>
+                        <p className="text-4xl font-bold leading-tight mb-2">
+                            <span className="text-black">Software Development Services</span>
                         </p>
                         <p className="text-2xl text-black mt-2 leading-relaxed mb-2">
                             We meet your expectations where most fall short, from low-Touch to high-Touch engagements.
@@ -89,7 +90,7 @@ const Carausel = () => {
                             </div>
                             <div className="p-6 rounded-lg text-start ">
                                 <h3 className="text-3xl font-bold text-black mb-2">
-                                    43+
+                                    43%
                                 </h3>
                                 <p className="text-lg text-black font-medium ">
                                     profiles in latest trending and in-demand skill clusters
@@ -103,14 +104,14 @@ const Carausel = () => {
                             </button></Link>
                     </div>
                     <div className='relative flex justify-center items-center mt-10 md:mt-0'>
-                        <img src='https://www.oceansoftwares.com/assets/img/Services/customised.webp' alt='Recruitment' className='object-cover rounded-lg' style={{ width: '500px', height: '300px' }} />
+                        <img src='https://www.oceansoftwares.com/assets/img/Services/customised.webp' alt='Recruitment' className='object-cover rounded-lg' style={{ width: '900px', height: '400px' }} />
                     </div>
                 </div>
 
                 {/* third slide */}
                 <div className='flex'>
                     <div className="max-w-4xl mx-10 p-0">
-                        <p className="text-5xl font-extrabold leading-[133%] mb-6">
+                        <p className="text-4xl font-bold leading-[133%] mb-6">
                             Partner in your exciting
                             <span className="text-blue-800"> Product Development </span>journey
                         </p>
@@ -131,7 +132,7 @@ const Carausel = () => {
                             </div>
                             <div className="p-6 rounded-lg text-start ">
                                 <h3 className="text-3xl font-bold text-black mb-2">
-                                    43+
+                                    43%
                                 </h3>
                                 <p className="text-lg text-black">
                                     Clients worldwide since 2015.
@@ -145,7 +146,8 @@ const Carausel = () => {
                             </button></Link>
                     </div>
                     <div className='flex justify-center items-center flex-grow mt-15'>
-                        <img src='https://freedesignfile.com/upload/2018/10/Company-Product-Development-Group-Meeting-Stock-Photo-04.jpg' alt='Recruitment' className='object-cover rounded-sm' style={{ width: '700px', height: '300px' }} />
+                        <img src='https://freedesignfile.com/upload/2018/10/Company-Product-Development-Group-Meeting-Stock-Photo-04.jpg' 
+                        alt='Recruitment' className='object-cover rounded-sm' style={{ width: '700px', height: '400px' }} />
                     </div>
                 </div>
             </Carousel>

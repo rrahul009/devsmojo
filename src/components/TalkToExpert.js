@@ -17,10 +17,11 @@ const TalkToExpert = () => {
                 <div className="bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105" data-aos="zoom-in-up">
                     <div className='flex justify-center mt-5'>
                         <img
-                            src="https://miro.medium.com/v2/resize:fit:1400/0*C_ucOsvJldViSxv-.png"
+                            // src="https://miro.medium.com/v2/resize:fit:1400/0*C_ucOsvJldViSxv-.png"
+                            src='/AI_Generated.jpeg'
                             alt="How you can leverage AI"
-                            className="object-cover rounded-t-lg"
-                            style={{ height: '200px' }}
+                            className=" rounded-t-lg"
+                            style={{ height: '250px',width:'450px' }}
                         />
                     </div>
                     <div className="p-6">
