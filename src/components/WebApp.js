@@ -11,7 +11,7 @@ import { initializeAOS } from '@/app/utils/Aos_setup';
 const webAppTypes = [
   {
     title: 'E-commerce Platforms',
-    icon: <ShoppingCartIcon className="h-12 w-12 text-blue-600" />,  // Changed color
+    icon: <ShoppingCartIcon className="h-12 w-12 text-blue-500" />,  // Changed color
     titleColor: 'text-black',  // Title color
     points: [
       'Integrated payment gateways',
@@ -22,7 +22,7 @@ const webAppTypes = [
   },
   {
     title: 'Content Management Systems (CMS)',
-    icon: <ArticleIcon className="h-12 w-12 text-red-600" />,  // Changed color
+    icon: <ArticleIcon className="h-12 w-12 text-blue-500" />,  // Changed color
     titleColor: 'text-black',  // Title color
     points: [
       'Flexible content management',
@@ -33,7 +33,7 @@ const webAppTypes = [
   },
   {
     title: 'Custom Dashboards',
-    icon: <DashboardIcon className="h-12 w-12 text-red-600" />,  // Changed color
+    icon: <DashboardIcon className="h-12 w-12 text-blue-500" />,  // Changed color
     titleColor: 'text-black',  // Title color
     points: [
       'Interactive data visualization',
@@ -44,7 +44,7 @@ const webAppTypes = [
   },
   {
     title: 'Web Applications',
-    icon: <AppsIcon  className="h-12 w-12 text-blue-600" />,  // Changed color
+    icon: <AppsIcon  className="h-12 w-12 text-blue-500" />,  // Changed color
     titleColor: 'text-black',  // Title color
     points: [
       'Custom user experiences',

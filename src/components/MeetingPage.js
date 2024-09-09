@@ -44,7 +44,7 @@ const MeetingPage = () => {
                 <p className="text-gray-700">Learn how to source skilled and experienced software developers.</p>
               </div>
             </div>
-          <Link href="aboutus">
+          <Link href="/aboutus/#schedular">
           <button
               type="button"
               className="mt-6 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"

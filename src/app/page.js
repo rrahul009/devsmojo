@@ -1,4 +1,5 @@
 
+import BarGraph from '@/components/BarGraph'
 import ClientSection from '@/components/ClientSection'
 import Footer from '@/components/Footer'
 import MainSection from '@/components/MainSection'
@@ -30,7 +31,8 @@ const page = () => {
       <TalkToExpert/>
       <TechnologiesSection/>
       {/* <InDemandSkillsPage/> */}
-      <TechnologyPieChart/>
+      <BarGraph/>
+      {/* <TechnologyPieChart/> */}
       {/* <PricingSection/> */}
       {/* <OurPartner/>
        <ClientSection/>

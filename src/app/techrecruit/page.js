@@ -22,10 +22,10 @@ const TechRecruitmentPage = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-white min-h-screen py-5 px-2 sm:px-6 lg:px-3" data-aos="zoom-in-up">
-        <div className="max-w-5xl mx-auto">
+      <div className="bg-white  py-5 px-2 sm:px-6 lg:px-3" data-aos="zoom-in-up">
+        <div className=" max-w-7xl mx-auto p-4">
           {/* Header Section */}
-          <header className="text-center mb-5">
+          <header className=" bg-gray-100 text-center  p-4">
             <h1 className="text-3xl font-extrabold text-gray-900 mb-4 leading-tight">
               Discover Top Talent with Our  Premium <span className="text-blue-600">IT Recruitment</span> Services
             </h1>
@@ -35,7 +35,7 @@ const TechRecruitmentPage = () => {
           </header>
 
           {/* Services Section */}
-          <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+          <section className="bg-gray-100 p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-5">
             {/* Service 1 */}
             <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-2xl duration-300">
               <div className="relative">
@@ -51,7 +51,7 @@ const TechRecruitmentPage = () => {
               <div className="p-6">
                 <h2 className="text-xl font-semibold text-gray-900 mb-2">Customised Talent head-hunting</h2>
                 <p className="text-gray-600">
-                   
+
                   We provide complete docus on the candidate so that your decision making is flawless.
                 </p>
               </div>
@@ -72,7 +72,7 @@ const TechRecruitmentPage = () => {
               <div className="p-6">
                 <h2 className="text-xl font-semibold text-gray-900 mb-2">Mock Interviews and Skill Assessment</h2>
                 <p className="text-gray-600">
-                  
+
                   We conduct Mock Interviews and Assessment to create skill profile of the candidate
                 </p>
               </div>
@@ -93,7 +93,7 @@ const TechRecruitmentPage = () => {
               <div className="p-6">
                 <h2 className="text-xl font-semibold text-gray-900 mb-2">Performance data on skill-recency</h2>
                 <p className="text-gray-600">
-                  
+
                   We gather skill information from Social Platforms and Skill Leaderboards
                 </p>
               </div>
@@ -113,7 +113,7 @@ const TechRecruitmentPage = () => {
               <div className="p-6">
                 <h2 className="text-xl font-semibold text-gray-900 mb-2"> Skill cluster mapping with the JD</h2>
                 <p className="text-gray-600">
-                   
+
                   Whether you hire for pedigree or cluster of skill, we map profiles with the JD and provide you only the best
                 </p>
               </div>
@@ -133,13 +133,13 @@ const TechRecruitmentPage = () => {
               <div className="p-6">
                 <h2 className="text-xl font-semibold text-gray-900 mb-2">Domain and Vertical mapping</h2>
                 <p className="text-gray-600">
-                 
+
                   A candidate with right Domain and Vertical experience will hit the ground running.
                 </p>
               </div>
             </div>
           </section>
-          <section className="p-8 bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 rounded-lg shadow-lg   mb-8 flex flex-wrap md:flex-nowrap" data-aos="zoom-in-up">
+          <section className="p-8  rounded-lg shadow-lg   mb-8 flex flex-wrap md:flex-nowrap" data-aos="zoom-in-up">
             {/* Text Content */}
             <div className="w-full md:w-1/2 mb-6 md:mb-0">
               <h3 className="text-3xl font-bold text-gray-900 mb-6 text-center md:text-left">
@@ -168,82 +168,86 @@ const TechRecruitmentPage = () => {
 
           {/* Why Choose us 1 */}
 
-          <section className="bg-gradient-to-r from-blue-50 via-teal-50 to-green-50 py-12 px-4 md:px-8 mt-8 rounded-lg shadow-lg" data-aos="zoom-in-up">
-            <div className="container mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+          <section className="bg-gray-100 py-4 p-5 px-4 md:px-2 mt-8 rounded-lg shadow-lg" data-aos="zoom-in-up">
+            <div className=" p-4 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
                 Discover Our Key Advantages
               </h2>
-              <p className="text-lg md:text-xl font-semibold text-gray-600 mb-10">
+              <p className="text-lg md:text-xl font-semibold text-gray-600 mb-5">
                 Make an offer to the right candidate in less than 7 days with our streamlined recruitment process.
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {/* Low Hiring Mistakes */}
-                <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transform transition-transform hover:scale-105 duration-300">
+                <div className="bg-white shadow-lg rounded-lg p-8 hover:shadow-xl transform transition-transform hover:scale-105 duration-300 flex flex-col items-center">
                   <div className="flex items-center justify-center mb-6">
-                    <svg className="w-16 h-16 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
-                      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" />
-                      <circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="2" fill="none" />
+                    <svg className="w-20 h-20 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="none" />
+                      <circle cx="12" cy="12" r="6" stroke="currentColor" strokeWidth="2" fill="none" />
                       <circle cx="12" cy="12" r="2" fill="currentColor" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Low Hiring Mistakes</h3>
-                  <p className="text-gray-600 mb-4">Pre-assessed profiles have a high success rate, significantly reducing hiring errors.</p>
-                  <p className="text-2xl font-bold text-blue-600">95%</p>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">Low Hiring Mistakes</h3>
+                  <p className="text-gray-600 text-center">
+                    <span className='font-bold text-2xl'>90%</span> employers have seen reduction in errors when they use skill-based assessment.
+                  </p>
                 </div>
 
+
                 {/* Right Hire */}
-                <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transform transition-transform hover:scale-105 duration-300">
+                <div className="bg-white shadow-lg rounded-lg p-8 hover:shadow-xl transform transition-transform hover:scale-105 duration-300">
                   <div className="flex items-center justify-center mb-6">
-                    <svg className="w-16 h-16 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-20 h-20 text-green-500" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 17.27L18.18 21 16.54 14.73 22 10.27l-7.19-.62L12 3 9.19 9.65 2 10.27l5.46 4.46L5.82 21z" />
                     </svg>
-
-
-
-
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Right Hire</h3>
-                  <p className="text-gray-600 mb-4">Our process ensures you get the right candidate, minimizing employee turnover.</p>
-                  <p className="text-2xl font-bold text-green-600">90%</p>
+                  <h3 className="text-xl font-bold text-gray-800 mb-3">Low Attrition Due to Right Hire</h3>
+                  <p className="text-gray-600 mb-4">
+                    <span className='font-bold text-2xl'>50%</span> reduction in employee turnover, because right hires are not overwhelmed by work.
+                  </p>
                 </div>
 
                 {/* Productivity Boost */}
-                <div className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transform transition-transform hover:scale-105 duration-300">
+                <div className="bg-white shadow-lg rounded-lg p-8 hover:shadow-xl transform transition-transform hover:scale-105 duration-300">
                   <div className="flex items-center justify-center mb-6">
-
-                    <svg className="w-16 h-16 text-red-500" fill="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-20 h-20 text-red-500" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M3 13h2v8H3v-8zm4-4h2v12H7V9zm4-2h2v14h-2V7zm4-6h2v20h-2V1z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Productivity Boost</h3>
-                  <p className="text-gray-600 mb-4">Our efficient hiring process quickly places the right talent, boosting overall productivity.</p>
-                  <p className="text-2xl font-bold text-red-600">80%</p>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-3">Productivity Boost</h3>
+                  <p className="text-gray-600 mb-4">
+                    Right talent can be up to <span className="font-bold text-gray-600 text-2xl">8 times</span> more productive than average employee. Our recruitment process is aimed at finding the right fit and not just recruitment numbers.
+                  </p>
+                  {/* Optional: If you want to remove the percentage text or update it, you can uncomment and modify the line below */}
+                  {/* <p className="text-2xl font-bold text-red-600">80%</p> */}
                 </div>
-
-
               </div>
             </div>
           </section>
 
-          <section className="bg-gradient-to-r from-gray-50 via-white to-gray-50 py-12 px-4 md:px-8 mt-10 rounded-lg shadow-lg">
+
+          <section className=" py-12 px-4 md:px-8 mt-10 rounded-lg shadow-lg">
             <div className="container mx-auto">
               <div className="flex flex-wrap md:flex-nowrap justify-center gap-6">
 
+                {/* Text Section */}
                 <div className="w-full md:w-1/2 px-4">
                   <h2 className="text-2xl md:text-4xl font-extrabold text-gray-800 mb-6">
                     RPO Services
                   </h2>
                   <p className="text-md md:text-md text-gray-600 mb-8 leading-relaxed">
-                    Outsource your recruitment process to us, and leverage DevMojo's experienced recruitment teams as your dedicated talent hunting team.
+                    Our Recruitment Process Outsourcing (RPO) service offers a comprehensive solution tailored to your unique business needs. We provide access to a pool of meticulously pre-screened profiles, ensuring that you only engage with candidates who meet your specific criteria and align with your organizational goals. Beyond simply supplying top-tier talent, our RPO service includes strategic expertise in developing and managing innovative approaches to attract and retain exceptional employees. By integrating targeted recruitment strategies with effective talent retention programs, we help you build a robust workforce that drives long-term success and growth for your business.
                   </p>
                 </div>
 
+                {/* Divider */}
                 <div className="hidden md:block w-px bg-gray-300 mx-4"></div>
+
+                {/* Contact Section */}
                 <div className="w-full md:w-1/2 px-4 flex items-center justify-center">
-                  <div className="bg-white p-8 rounded-lg shadow-xl max-w-md transform transition-transform hover:scale-105 duration-300">
+                  <div className=" p-8 rounded-lg  max-w-md transform transition-transform hover:scale-105 duration-300">
                     <p className="text-gray-800 mb-4 text-lg font-semibold">
-                      Send a message <span className="text-blue-600 underline"></span> to explore.
+                      Send a message  to explore
                     </p>
                     <Link
                       href="/aboutus/#schedular"
@@ -256,6 +260,7 @@ const TechRecruitmentPage = () => {
               </div>
             </div>
           </section>
+
 
           {/* Why Choose us 2 */}
           <section class="p-5 bg-gradient-to-r from-blue-50 via-teal-50 to-green-50 rounded-lg shadow-lg max-w-8xl mx-auto mt-10 mb-8 flex flex-col md:flex-row items-center" data-aos="zoom-in-up">
@@ -329,7 +334,7 @@ const TechRecruitmentPage = () => {
 
         </div>
       </div>
-      
+
       <Footer />
     </>
   );

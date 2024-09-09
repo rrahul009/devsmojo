@@ -18,10 +18,11 @@ const Carausel = () => {
                 `}
             </style>
             <Carousel
-                // autoPlay={true}
+                autoPlay={true}
                 infiniteLoop={true}
-                interval={5000}
+                interval={3000}
                 stopOnHover={true}
+                showStatus={false}
             >
                 {/* First slide */}
                 <div className='flex p-8  bg-gray-100'>
@@ -109,47 +110,47 @@ const Carausel = () => {
                 </div>
 
                 {/* third slide */}
-                <div className='flex bg-gray-100 p-5'>
-                    <div className="max-w-4xl mx-10 p-0">
-                        <p className="text-4xl font-bold leading-[133%] mb-6">
-                            Partner in your exciting <br/>
-                            <span className="text-blue-800"> Product Development </span>journey
-                        </p>
-                        <p className="text-md text-gray-700 leading-[133%] mb-4">
-                            Hire our seasoned Product Specialists, Business Analysts and Data Scientists for
-                        </p>
-                        <p className="text-md text-gray-700 leading-7 mb-2">
-                            Market Research, Customer Surveys, User Stories, Marketing Collaterals and Content.
-                        </p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div className="p-6 rounded-lg text-start  ">
-                                <h3 className="text-3xl font-bold text-black mb-2">
-                                    200K+
-                                </h3>
-                                <p className="text-lg text-black">
-                                    Verified software engineers in our database.
-                                </p>
-                            </div>
-                            <div className="p-6 rounded-lg text-start ">
-                                <h3 className="text-3xl font-bold text-black mb-2">
-                                    57%
-                                </h3>
-                                <p className="text-lg text-black">
-                                    Clients worldwide since 2015.
-                                </p>
-                            </div>
-                        </div>
-                        <Link href="/services/#ai">
-                            <button className="flex items-center border-2 border-black py-3 px-6 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-2">
-                                <span className="mr-2">Learn More</span>
-                                <ArrowDownwardIcon />
-                            </button></Link>
-                    </div>
-                    <div className='flex justify-center items-center flex-grow mt-15'>
-                        <img src='https://freedesignfile.com/upload/2018/10/Company-Product-Development-Group-Meeting-Stock-Photo-04.jpg'
-                            alt='Recruitment' className='object-cover rounded-sm' style={{ width: '700px', height: '400px' }} />
-                    </div>
-                </div>
+       <div>
+       <div className='flex flex-col md:flex-row bg-gray-100 p-5'>
+      <div className="max-w-5xl mx-12 p-0">
+        <p className="text-4xl font-bold leading-tight mb-6">
+          Partner in your exciting  &nbsp; <br />
+          <span className="text-blue-800">Product Development</span> journey
+        </p>
+        <p className="text-md text-gray-700 leading-relaxed mb-1">
+          Hire our seasoned Product Specialists, Business Analysts, and Data Scientists for
+        </p>
+        <p className="text-md text-gray-700 leading-relaxed ">
+          Market Research, Customer Surveys, User Stories, Marketing Collaterals, and Content.
+        </p>
+        <div className="grid grid-cols-1 gap-6">
+          <div className="p-6 rounded-lg text-start ">
+            <h3 className="text-3xl font-bold text-black mb-2">
+              50+
+            </h3>
+            <p className="text-xl text-gray-700 leading-relaxed">
+              Years of combined experience of our experts in delivering Software Products in diverse Industry Verticals and Technology Horizontals.
+            </p>
+          </div>
+        </div>
+        <Link href="/services/#ai">
+          <button className="flex items-center border-2 border-black py-3 px-6 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-4">
+            <span className="mr-2">Learn More</span>
+            <ArrowDownwardIcon />
+          </button>
+        </Link>
+      </div>
+      <div className='flex justify-center items-center  mt-8 md:mt-0'>
+        <img
+          src='https://freedesignfile.com/upload/2018/10/Company-Product-Development-Group-Meeting-Stock-Photo-04.jpg'
+          alt='Product Development'
+          className='object-fill rounded-sm'
+          style={{width: '1000px', height: '400px' }}
+        />
+      </div>
+    </div>
+       </div>
+
             </Carousel>
         </>
     )
