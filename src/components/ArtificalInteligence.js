@@ -24,10 +24,10 @@ const ArtificalInteligence = () => {
     ];
 
     return (
-        <div className="p-5  rounded-lg shadow-lg mt-8">
-            <section  id="ai" className=" mx-auto mb-12">
+        <div className=" py-0 bg-gray-100  rounded-lg shadow-lg mt-8">
+            <section id="ai" className=" mx-auto mb-12">
                 {/* Image and Text Section */}
-                <div className="p-8 rounded-lg bg-white shadow-lg">
+                <div className="p-8  ">
                     <div className="flex flex-col md:flex-row items-start md:items-center md:space-x-8 space-y-6 md:space-y-0">
                         {/* Image Section */}
                         <div className="flex-shrink-0 md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0">
@@ -73,28 +73,28 @@ const ArtificalInteligence = () => {
                                 </li>
                             </ul>
                         </div>
-                        
+
                     </div>
-                    <h1 className="text-3xl font-bold text-blue-600 text-start mb-6 mt-12">AI Use Cases</h1>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {aiUseCases.map((useCase, index) => (
-                        <div
-                            key={index}
-                            className={`p-6 rounded-lg shadow-md bg-white transition-transform transform hover:scale-105 flex items-center space-x-4`}
-                            data-aos="fade-up"
-                        >
-                            <div className="flex-shrink-0">
-                                {useCase.icon}
+                    <h1 className="text-3xl font-bold text-black text-start mb-6 mt-12">AI Use Cases</h1>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {aiUseCases.map((useCase, index) => (
+                            <div
+                                key={index}
+                                className={`p-6 rounded-lg shadow-md bg-white transition-transform transform hover:scale-105 flex items-center space-x-4`}
+                                data-aos="fade-up"
+                            >
+                                <div className="flex-shrink-0">
+                                    {useCase.icon}
+                                </div>
+                                <div>
+                                    <h3 className="text-xl font-semibold text-blue-700 mb-2">{useCase.title}</h3>
+                                    <p className="text-gray-700">{useCase.description}</p>
+                                </div>
                             </div>
-                            <div>
-                                <h3 className="text-xl font-semibold text-blue-700 mb-2">{useCase.title}</h3>
-                                <p className="text-gray-700">{useCase.description}</p>
-                            </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
-                </div>
-                
+
                 {/* AI Use Cases Section */}
                 {/* <h1 className="text-3xl font-bold text-blue-600 text-start mb-6 mt-12">AI Use Cases</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

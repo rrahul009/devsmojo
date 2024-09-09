@@ -12,7 +12,7 @@ const webAppTypes = [
   {
     title: 'E-commerce Platforms',
     icon: <ShoppingCartIcon className="h-12 w-12 text-blue-600" />,  // Changed color
-    titleColor: 'text-blue-700',  // Title color
+    titleColor: 'text-black',  // Title color
     points: [
       'Integrated payment gateways',
       'Product management systems',
@@ -22,8 +22,8 @@ const webAppTypes = [
   },
   {
     title: 'Content Management Systems (CMS)',
-    icon: <ArticleIcon className="h-12 w-12 text-green-600" />,  // Changed color
-    titleColor: 'text-green-700',  // Title color
+    icon: <ArticleIcon className="h-12 w-12 text-red-600" />,  // Changed color
+    titleColor: 'text-black',  // Title color
     points: [
       'Flexible content management',
       'Media management tools',
@@ -34,7 +34,7 @@ const webAppTypes = [
   {
     title: 'Custom Dashboards',
     icon: <DashboardIcon className="h-12 w-12 text-red-600" />,  // Changed color
-    titleColor: 'text-red-700',  // Title color
+    titleColor: 'text-black',  // Title color
     points: [
       'Interactive data visualization',
       'Custom metrics tracking',
@@ -44,8 +44,8 @@ const webAppTypes = [
   },
   {
     title: 'Web Applications',
-    icon: <AppsIcon className="h-12 w-12 text-purple-600" />,  // Changed color
-    titleColor: 'text-purple-700',  // Title color
+    icon: <AppsIcon  className="h-12 w-12 text-blue-600" />,  // Changed color
+    titleColor: 'text-black',  // Title color
     points: [
       'Custom user experiences',
       'Streamlined processes',
@@ -66,7 +66,7 @@ const WebDevelopmentCard = () => {
             <div className="container mx-auto px-4 md:px-8"data-aos="zoom-in-up">
                 <div className="bg-white shadow-lg rounded-lg p-8 mb-8">
                     <div className="text-center mb-6">
-                        <h2 className="text-4xl font-bold text-blue-600 mb-4">
+                        <h2 className="text-4xl font-bold text-black mb-2">
                             Web Development
                         </h2>
                         <p className="text-md text-gray-700">

@@ -28,7 +28,7 @@ const MeetingPage = () => {
 
           {/* Text Section */}
           <div className="md:w-1/2 p-8">
-            <h1 className="text-3xl font-semibold mb-4 text-blue-600">Got a project idea OR<br/>  IT recruitment needs?</h1>
+            <h1 className="text-3xl font-bold mb-4 text-black">Got a project idea or  IT recruitment needs?</h1>
             <h2 className="text-2xl font-semibold mb-6 text-gray-800">Schedule a call with our team</h2>
             <div className="space-y-4">
               <div className="flex items-center">

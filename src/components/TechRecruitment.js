@@ -9,8 +9,8 @@ export default function TechRecruit() {
         return cleanupAOS; // Cleanup AOS on unmount
     }, []);
     return (
-        <div className="min-h-screen flex flex-col justify-center items-center p-4 bg-gray-100"data-aos="zoom-in-up"
-        data-aos-duration="1000">
+        <div className="min-h-screen flex flex-col justify-center items-center p-4 bg-gray-100" data-aos="zoom-in-up"
+            data-aos-duration="1000">
             <Head>
                 <title>Tech Recruitment & Managed IT Services</title>
                 <meta name="description" content="Tech recruitment, staffing, and managed IT services." />
@@ -19,7 +19,7 @@ export default function TechRecruit() {
 
             <main className="w-full max-w-7=xl  mt-1">
                 {/* Card Component */}
-                <div 
+                <div
                     className="bg-blue-100 shadow-lg rounded-lg p-10 flex flex-col md:flex-row h-full md:h-[500px] bg-cover bg-center"
                     style={{ backgroundImage: 'url("https://media.istockphoto.com/id/1290215516/vector/light-blue-cyan-waves-sea-streaming-water-concept-flowing-subtle-curves-pastel-line-art.jpg?s=612x612&w=0&k=20&c=8nrCC4_Q-uhTTYli9bjzGWdx3FfJRyxPBsLFnmClM1A=")' }}
                 >
@@ -30,8 +30,8 @@ export default function TechRecruit() {
                         <p className="text-lg font-bold">
                             <span className="text-blue-600">Over 65,000</span> tech candidates in our database
                         </p>
-                        <a 
-                            href="/recruitment" 
+                        <a
+                            href="/recruitment"
                             className="inline-block bg-blue-600 text-white py-4 px-8 rounded-lg font-bold border-2 border-blue-600 hover:bg-white hover:text-black transition duration-300"
                         >
                             Learn more about recruitment

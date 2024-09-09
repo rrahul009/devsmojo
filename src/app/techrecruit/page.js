@@ -18,11 +18,11 @@ const TechRecruitmentPage = () => {
   useEffect(() => {
     const cleanupAOS = initializeAOS();
     return cleanupAOS; // Cleanup AOS on unmount
-}, []);
+  }, []);
   return (
     <>
       <Navbar />
-      <div className="bg-white min-h-screen py-5 px-2 sm:px-6 lg:px-3"data-aos="zoom-in-up">
+      <div className="bg-white min-h-screen py-5 px-2 sm:px-6 lg:px-3" data-aos="zoom-in-up">
         <div className="max-w-5xl mx-auto">
           {/* Header Section */}
           <header className="text-center mb-5">
@@ -49,9 +49,9 @@ const TechRecruitmentPage = () => {
                 </div>
               </div>
               <div className="p-6">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-2">Customised Talent head-hunting</h2>
+                <h2 className="text-xl font-semibold text-gray-900 mb-2">Customised Talent head-hunting</h2>
                 <p className="text-gray-600">
-                  Customised Talent head-hunting
+                   
                   We provide complete docus on the candidate so that your decision making is flawless.
                 </p>
               </div>
@@ -70,9 +70,9 @@ const TechRecruitmentPage = () => {
                 </div>
               </div>
               <div className="p-6">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-2">Mock Interviews and Skill Assessment</h2>
+                <h2 className="text-xl font-semibold text-gray-900 mb-2">Mock Interviews and Skill Assessment</h2>
                 <p className="text-gray-600">
-                  Mock Interviews and Skill Assessment
+                  
                   We conduct Mock Interviews and Assessment to create skill profile of the candidate
                 </p>
               </div>
@@ -91,9 +91,9 @@ const TechRecruitmentPage = () => {
                 </div>
               </div>
               <div className="p-6">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-2">Performance data on skill-recency</h2>
+                <h2 className="text-xl font-semibold text-gray-900 mb-2">Performance data on skill-recency</h2>
                 <p className="text-gray-600">
-                  Performance data on skill-recency
+                  
                   We gather skill information from Social Platforms and Skill Leaderboards
                 </p>
               </div>
@@ -111,9 +111,9 @@ const TechRecruitmentPage = () => {
                 </div>
               </div>
               <div className="p-6">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-2"> Skill cluster mapping with the JD</h2>
+                <h2 className="text-xl font-semibold text-gray-900 mb-2"> Skill cluster mapping with the JD</h2>
                 <p className="text-gray-600">
-                  Skill cluster mapping with the JD
+                   
                   Whether you hire for pedigree or cluster of skill, we map profiles with the JD and provide you only the best
                 </p>
               </div>
@@ -131,15 +131,15 @@ const TechRecruitmentPage = () => {
                 </div>
               </div>
               <div className="p-6">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-2">Domain and Vertical mapping</h2>
+                <h2 className="text-xl font-semibold text-gray-900 mb-2">Domain and Vertical mapping</h2>
                 <p className="text-gray-600">
-                  Domain and Vertical mapping
+                 
                   A candidate with right Domain and Vertical experience will hit the ground running.
                 </p>
               </div>
             </div>
           </section>
-          <section className="p-8 bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 rounded-lg shadow-lg   mb-8 flex flex-wrap md:flex-nowrap"data-aos="zoom-in-up">
+          <section className="p-8 bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 rounded-lg shadow-lg   mb-8 flex flex-wrap md:flex-nowrap" data-aos="zoom-in-up">
             {/* Text Content */}
             <div className="w-full md:w-1/2 mb-6 md:mb-0">
               <h3 className="text-3xl font-bold text-gray-900 mb-6 text-center md:text-left">
@@ -258,7 +258,7 @@ const TechRecruitmentPage = () => {
           </section>
 
           {/* Why Choose us 2 */}
-          <section class="p-5 bg-gradient-to-r from-blue-50 via-teal-50 to-green-50 rounded-lg shadow-lg max-w-8xl mx-auto mt-10 mb-8 flex flex-col md:flex-row items-center"data-aos="zoom-in-up">
+          <section class="p-5 bg-gradient-to-r from-blue-50 via-teal-50 to-green-50 rounded-lg shadow-lg max-w-8xl mx-auto mt-10 mb-8 flex flex-col md:flex-row items-center" data-aos="zoom-in-up">
 
 
             <div class="flex-1 flex flex-col justify-center p-6">
@@ -329,14 +329,7 @@ const TechRecruitmentPage = () => {
 
         </div>
       </div>
-      <section className="relative h-80 bg-cover bg-center" style={{ backgroundImage: "url('https://smart-techservices.net/admin/images/3cr.jpg')" }}>
-        {/* Overlay Content */}
-        <section className="relative p-5 h-80 bg-cover bg-center" style={{ backgroundImage: "url('https://smart-techservices.net/admin/images/3cr.jpg')" }}>
-          {/* Overlay Content */}
-
-        </section>
-
-      </section>
+      
       <Footer />
     </>
   );

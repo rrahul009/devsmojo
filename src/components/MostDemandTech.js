@@ -97,7 +97,7 @@ const TechnologyPieChart = () => {
 
     return (
         <div className="bg-gray-100 rounded-lg shadow-lg p-5 sm:p-8 md:p-5 mt-5" data-aos="zoom-in">
-            <h2 className="text-3xl font-bold mb-2 text-center text-gray-800">Distribution of Technology Roles</h2>
+            <h2 className="text-3xl font-bold mb-2 text-center text-gray-800">Our Strength in top trending Skills</h2>
             <div className="flex flex-col md:flex-row items-center md:items-start">
                 {/* Pie Chart */}
                 <div className="w-full md:w-3/4 mb-6 md:mb-0 flex justify-center mt-12" style={{ height: '350px' }}>

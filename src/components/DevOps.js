@@ -60,7 +60,7 @@ const DevOpsAndCloudInfrastructure = () => {
             <div  className="container mx-auto px-4">
                 <div className="bg-white shadow-lg rounded-lg p-5 mb-5 max-w-7xl mx-auto">
                     <div id="cloud-computing"  className="text-center mb-6 p-2">
-                        <h2 className="text-4xl font-bold text-blue-600 mb-4">
+                        <h2 className="text-4xl font-bold text-black mb-4">
                             DevOps and Cloud Infrastructure
                         </h2>
                         <p className="text-md text-gray-700">

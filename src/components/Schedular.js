@@ -7,7 +7,7 @@ import { FaCalendarAlt } from 'react-icons/fa';
 const CustomDatePickerInput = ({ value, onClick, placeholder }) => (
   <div
     onClick={onClick}
-    className="w-full p-2 border border-gray-300 rounded flex items-center"
+    className="w-full max-w-md p-2 border border-gray-300 rounded flex items-center cursor-pointer"
   >
     <input
       type="text"
@@ -24,6 +24,7 @@ const Schedular = () => {
   const [startDate, setStartDate] = useState(null); // Initialize as null
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState(''); // New state for phone number
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
@@ -34,21 +35,21 @@ const Schedular = () => {
   };
 
   return (
-    <div id="schedular" className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
-      <div className="flex flex-col md:flex-row w-full max-w-6xl bg-white rounded-lg p-5">
+    <div id="schedular" className="bg-gray-100 flex items-center justify-center">
+      <div className="flex flex-col md:flex-row w-full max-w-6xl bg-white rounded-lg py-0 mt-5">
         {/* Image Section */}
-        <div className="md:w-1/2 flex justify-center items-center">
+        <div className="md:w-1/2 flex justify-center items-center p-5">
           <img
             src="https://assets.biztimes.com/uploads/2019/11/management-calendar_1537654346-1068x601.jpg" // Replace with your image URL
             alt="Meeting Illustration"
             className="w-full h-auto object-cover rounded-l-lg"
-            style={{ maxHeight: '100%', objectFit: 'cover' }}
+            style={{ height: '400px', objectFit: 'cover' }}
           />
         </div>
 
         {/* Form Section */}
-        <div className="md:w-1/2 p-8">
-          <h1 className="text-2xl font-bold mb-6 text-center">Schedule a Meeting</h1>
+        <div className="md:w-1/2 p-2">
+          <h1 className="text-2xl font-bold mb-2 text-start">Schedule a Meeting</h1>
           {submitted ? (
             <div className="text-center">
               <h2 className="text-lg font-semibold">Thank you!</h2>
@@ -56,8 +57,8 @@ const Schedular = () => {
             </div>
           ) : (
             <form onSubmit={handleSubmit}>
-              <div className="mb-4">
-                <label className="block text-gray-700 font-semibold mb-2" htmlFor="name">
+              <div className="mb-2">
+                <label className="block text-gray-700 font-semibold" htmlFor="name">
                   Name
                 </label>
                 <input
@@ -65,12 +66,12 @@ const Schedular = () => {
                   id="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full p-2 border border-gray-300 rounded"
+                  className="w-full max-w-md p-2 border border-gray-300 rounded"
                   required
                 />
               </div>
-              <div className="mb-4">
-                <label className="block text-gray-700 font-semibold mb-2" htmlFor="email">
+              <div className="mb-2">
+                <label className="block text-gray-700 font-semibold" htmlFor="email">
                   Email
                 </label>
                 <input
@@ -78,12 +79,25 @@ const Schedular = () => {
                   id="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full p-2 border border-gray-300 rounded"
+                  className="w-full max-w-md p-2 border border-gray-300 rounded"
                   required
                 />
               </div>
-              <div className="mb-4">
-                <label className="block text-gray-700 font-semibold mb-2" htmlFor="date">
+              <div className="mb-2">
+                <label className="block text-gray-700 font-semibold" htmlFor="phone">
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  className="w-full max-w-md p-2 border border-gray-300 rounded"
+                  required
+                />
+              </div>
+              <div className="mb-2 w-full">
+                <label className="block text-gray-700 font-semibold" htmlFor="date">
                   Preferred Date and Time
                 </label>
                 <DatePicker
@@ -94,24 +108,26 @@ const Schedular = () => {
                   customInput={<CustomDatePickerInput placeholder="Select date and time" />}
                 />
               </div>
-              <div className="mb-4">
-                <label className="block text-gray-700 font-semibold mb-2" htmlFor="message">
+              <div className="mb-2">
+                <label className="block text-gray-700 font-semibold" htmlFor="message">
                   Message (Optional)
                 </label>
                 <textarea
                   id="message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  className="w-full p-2 border border-gray-300 rounded"
+                  className="w-full max-w-md p-2 border border-gray-300 rounded"
                   rows="2"
                 />
               </div>
-              <button
-                type="submit"
-                className="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
-              >
-                Schedule Meeting
-              </button>
+              <div className="mb-2">
+                <button
+                  type="submit"
+                  className="w-full max-w-md bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+                >
+                  Schedule Meeting
+                </button>
+              </div>
             </form>
           )}
         </div>

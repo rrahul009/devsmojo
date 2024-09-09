@@ -24,8 +24,8 @@ const Carausel = () => {
                 stopOnHover={true}
             >
                 {/* First slide */}
-                <div className='flex p-8 ' style={{backgroundColor:"rgb(196, 208, 212)"}}>
-                    <div className="max-w-4xl mx-10 p-0">
+                <div className='flex p-8  bg-gray-100'>
+                    <div className="max-w-5xl mx-10 p-0">
                         <p className="text-4xl font-bold leading-[133%] mb-6">
                             Premium <span className="text-blue-600">IT Recruitment</span> through pre-vetted Software Profiles
                         </p>
@@ -53,7 +53,7 @@ const Carausel = () => {
                                 </p>
                             </div>
                         </div>
-                        <Link href="/aboutus/#schedular">
+                        <Link href="/techrecruit">
                             <button className="flex items-center border-2 border-black py-3 px-6 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-2">
                                 <span className="mr-2">Learn More</span>
                                 <ArrowDownwardIcon />
@@ -66,7 +66,7 @@ const Carausel = () => {
                 </div>
 
                 {/* second slide */}
-                <div className='bg-white flex flex-col md:flex-row items-center justify-between py-2 px-2 md:px-2'>
+                <div className='bg-gray-100  flex flex-col md:flex-row items-center justify-between py-2 px-2 md:px-2'>
                     <div className="max-w-6xl p-2">
                         <p className="text-4xl font-bold leading-tight mb-2">
                             <span className="text-black">Software Development Services</span>
@@ -97,7 +97,7 @@ const Carausel = () => {
                                 </p>
                             </div>
                         </div>
-                        <Link href="/aboutus/#schedular">
+                        <Link href="/services">
                             <button className="flex items-center border-2 border-black py-3 px-6 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-2">
                                 <span className="mr-2">Learn More</span>
                                 <ArrowDownwardIcon />
@@ -109,10 +109,10 @@ const Carausel = () => {
                 </div>
 
                 {/* third slide */}
-                <div className='flex'>
+                <div className='flex bg-gray-100 p-5'>
                     <div className="max-w-4xl mx-10 p-0">
                         <p className="text-4xl font-bold leading-[133%] mb-6">
-                            Partner in your exciting
+                            Partner in your exciting <br/>
                             <span className="text-blue-800"> Product Development </span>journey
                         </p>
                         <p className="text-md text-gray-700 leading-[133%] mb-4">
@@ -139,15 +139,15 @@ const Carausel = () => {
                                 </p>
                             </div>
                         </div>
-                        <Link href="/aboutus/#schedular">
+                        <Link href="/services/#ai">
                             <button className="flex items-center border-2 border-black py-3 px-6 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-2">
                                 <span className="mr-2">Learn More</span>
                                 <ArrowDownwardIcon />
                             </button></Link>
                     </div>
                     <div className='flex justify-center items-center flex-grow mt-15'>
-                        <img src='https://freedesignfile.com/upload/2018/10/Company-Product-Development-Group-Meeting-Stock-Photo-04.jpg' 
-                        alt='Recruitment' className='object-cover rounded-sm' style={{ width: '700px', height: '400px' }} />
+                        <img src='https://freedesignfile.com/upload/2018/10/Company-Product-Development-Group-Meeting-Stock-Photo-04.jpg'
+                            alt='Recruitment' className='object-cover rounded-sm' style={{ width: '700px', height: '400px' }} />
                     </div>
                 </div>
             </Carousel>
