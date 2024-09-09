@@ -4,6 +4,7 @@ import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArro
 import FileDownloadDoneIcon from '@mui/icons-material/FileDownloadDone';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { initializeAOS } from '@/app/utils/Aos_setup';
+import Link from 'next/link';
 
 const PitchSection = () => {
     useEffect(() => {
@@ -13,7 +14,7 @@ const PitchSection = () => {
     return (
         <>
             {/* First card */}
-            <div className="py-1 p-4 bg-white rounded-lg shadow-md " data-aos="zoom-in-up" style={{marginTop:'-30px'}}>
+            <div className="py-1 p-4 bg-white rounded-lg shadow-md " data-aos="zoom-in-up" style={{ marginTop: '-30px' }}>
                 <section className="mb-5">
                     <h1 className="text-4xl font-bold text-center mb-6  text-black">“Why choose Our Software Consulting Services?”</h1>
                     <div className="flex flex-col md:flex-row items-start md:items-center md:space-x-8 space-y-6 md:space-y-0">
@@ -23,7 +24,7 @@ const PitchSection = () => {
                                 src='/software_consulting_services.jpg'
                                 alt="Software Consulting"
                                 className="object-cover rounded-md"
-                                style={{height:'350px',width:'550px'}}
+                                style={{ height: '350px', width: '550px' }}
                             />
                         </div>
                         <div className="flex-1 md:w-1/2 mb-6 md:mb-0">
@@ -44,7 +45,7 @@ const PitchSection = () => {
                                 <li className="flex items-start">
                                     <span className="text-blue-500 text-xl mr-3"><FileDownloadDoneIcon /></span>
                                     <span>
-                                        <strong className="font-semibold">Free Expert Consultation:</strong> Speak with our experts at no cost to explore how we can assist in achieving your business goals.
+                                        <strong className="font-semibold">Free Expert Consultation:</strong> <Link href="/aboutus/#schedular"><span className='text-blue-600 font-bold'>Speak with our experts</span></Link> at no cost to explore how we can assist in achieving your business goals.
                                     </span>
                                 </li>
                             </ul>
@@ -54,7 +55,7 @@ const PitchSection = () => {
             </div>
             {/* 2nd card */}
 
-            <div className="p-5 mt-5  bg-gray-100 rounded-lg shadow-md" style={{ fontFamily: "sans-serif" }} data-aos="zoom-in-up" >
+            <div className="p-3 mt-5  bg-gray-100 rounded-lg shadow-md" style={{ fontFamily: "sans-serif" }} data-aos="zoom-in-up" >
                 <section className="mb-12">
                     <h1 className="text-4xl font-bold text-center mb-2  text-black">"Why Choose Our Pre-Vetted Resume Service ?”</h1>
                     <div className="flex flex-col md:flex-row items-start md:items-center md:space-x-8 space-y-6 md:space-y-0">
@@ -81,6 +82,12 @@ const PitchSection = () => {
                                             <strong className="font-semibold">Comfort of Hiring Without Interview:</strong> Streamline your hiring process with pre-vetted candidates.
                                         </span>
                                     </li>
+                                    <Link href="/aboutus/#schedular">
+                                        <li className=" ml-5 mt-5">
+
+                                            <strong className="font-semibold text-blue-600">Talk with Our Experts</strong>
+
+                                        </li></Link>
                                 </ul>
                             </section>
                         </div>
@@ -90,7 +97,7 @@ const PitchSection = () => {
                                 src='/prevetedresume.jpeg'
                                 alt="Software Consulting"
                                 className="object-fill rounded-md"
-                                style={{ height: '300px',width:'400px',marginTop:'20px' }}
+                                style={{ height: '370px', width: '550px', marginTop: '20px' }}
                             />
                         </div>
                     </div>
@@ -152,7 +159,7 @@ const PitchSection = () => {
                                 <li className="flex items-start">
                                     <span className="text-blue-500 text-xl mr-3"><FileDownloadDoneIcon /></span>
                                     <span>
-                                        <strong className="font-semibold">Free Expert Consultation:</strong> Speak with our experts at no cost to explore how we can assist you in achieving your MVP goals.
+                                        <strong className="font-semibold">Free Expert Consultation:</strong> <Link href="/aboutus/#schedular"><span className='text-blue-600 font-bold'>Speak with our experts</span></Link>  at no cost to explore how we can assist you in achieving your MVP goals.
                                     </span>
                                 </li>
                             </ul>

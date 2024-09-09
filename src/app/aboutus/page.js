@@ -1,9 +1,11 @@
+'use client'
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import Schedular from '@/components/Schedular';
 import { Button } from '@mui/material';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
+import { initializeAOS } from '../utils/Aos_setup';
 
 // const teamMembers = [
 //   {
@@ -29,23 +31,23 @@ import React from 'react';
 // ];
 
 const MeetOurTeam = () => {
+  useEffect(() => {
+    const cleanupAOS = initializeAOS();
+    return cleanupAOS; // Cleanup AOS on unmount
+}, []);
   return (
     <>
       <Navbar />
-      <div className="bg-gray-100 p-2 py-0">
+      <div className="bg-gray-100 p-2 py-0"data-aos="zoom-in-up">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">
             {/* Text Section */}
             <div className="flex-1 p-6 md:p-10 rounded-lg">
               <h2 className="text-4xl font-extrabold text-gray-800 mb-4">ABOUT US</h2>
               <p className="text-md text-gray-600 mb-6">
-                At <span className='font-bold text-xl text-blue-600'>DevsMojo</span>, we are dedicated to transforming your vision into reality through innovative and cutting-edge technology solutions. With a team of skilled professionals, we specialize in custom app development, cloud services, and digital transformation to drive your business forward. Our mission is to deliver exceptional quality and value by harnessing the latest technology trends and providing tailored solutions that meet your unique needs. From ideation to execution, we work closely with you to ensure every project is a success, helping you stay ahead in a rapidly evolving digital landscape.
+                At devsMojo, we are dedicated to transforming your vision into reality through innovative and cutting-edge technology solutions. With a team of skilled professionals, we specialize in custom app development, cloud services, and digital transformation to drive your business forward. Our mission is to deliver exceptional quality and value by harnessing the latest technology trends and providing tailored solutions that meet your unique needs. From ideation to execution, we work closely with you to ensure every project is a success, helping you stay ahead in a rapidly evolving digital landscape.
               </p>
-              <Link href="/aboutus/#schedular">
-                <Button variant="contained" color="primary" className="transition-transform transform hover:scale-105 p-3">
-                  Learn More
-                </Button>
-              </Link>
+              
             </div>
 
             {/* Image Section */}
@@ -60,7 +62,7 @@ const MeetOurTeam = () => {
         </div>
       </div>
       {/* Our Vision Section */}
-      <section className="bg-white p-2 rounded-lg shadow-lg border border-gray-200 mt-5 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
+      <section className="bg-white p-2 rounded-lg shadow-lg border border-gray-200 mt-5 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8" data-aos="zoom-in-up">
         <div className="flex-1">
           {/* Image Section */}
           <div className="p-6 md:p-2">

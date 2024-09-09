@@ -243,7 +243,7 @@ const TechRecruitmentPage = () => {
                 <div className="w-full md:w-1/2 px-4 flex items-center justify-center">
                   <div className="bg-white p-8 rounded-lg shadow-xl max-w-md transform transition-transform hover:scale-105 duration-300">
                     <p className="text-gray-800 mb-4 text-lg font-semibold">
-                      Send a message <span className="text-blue-600 underline">here</span> to explore.
+                      Send a message <span className="text-blue-600 underline"></span> to explore.
                     </p>
                     <Link
                       href="/aboutus/#schedular"

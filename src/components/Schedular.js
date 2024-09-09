@@ -1,5 +1,6 @@
 'use client';
-import React, { useState } from 'react';
+import { initializeAOS } from '@/app/utils/Aos_setup';
+import React, { useEffect, useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { FaCalendarAlt } from 'react-icons/fa';
@@ -21,6 +22,10 @@ const CustomDatePickerInput = ({ value, onClick, placeholder }) => (
 );
 
 const Schedular = () => {
+  useEffect(() => {
+    const cleanupAOS = initializeAOS();
+    return cleanupAOS; // Cleanup AOS on unmount
+}, []);
   const [startDate, setStartDate] = useState(null); // Initialize as null
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -35,7 +40,7 @@ const Schedular = () => {
   };
 
   return (
-    <div id="schedular" className="bg-gray-100 flex items-center justify-center">
+    <div id="schedular" className="bg-gray-100 flex items-center justify-center mt-5"data-aos="zoom-in-up">
       <div className="flex flex-col md:flex-row w-full max-w-6xl bg-white rounded-lg py-0 mt-5">
         {/* Image Section */}
         <div className="md:w-1/2 flex justify-center items-center p-5">

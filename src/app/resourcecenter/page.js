@@ -1,19 +1,25 @@
-import React from 'react';
+'use client'
+import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { FaLightbulb, FaChartLine, FaTools, FaEye, FaComments, FaFileAlt } from 'react-icons/fa'; // Import icons from react-icons
+import { initializeAOS } from '../utils/Aos_setup';
 
 const ResourceCenterPage = () => {
+  useEffect(() => {
+    const cleanupAOS = initializeAOS();
+    return cleanupAOS; // Cleanup AOS on unmount
+}, []);
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100">
+    <div className="min-h-screen flex flex-col bg-gray-100"data-aos="zoom-in-up">
       <Navbar />
       <main className="flex-1 p-2">
         <div className="max-w-7xl mx-auto bg-white p-3 rounded-lg shadow-lg border border-gray-200 flex flex-col md:flex-row">
           {/* Text Content */}
           <div className="flex-1 p-3 md:p-8 flex flex-col justify-center">
-            <h1 className="text-4xl font-extrabold text-black mb-6 text-center md:text-left">Resource Center</h1>
+            <h1 className="text-3xl font-bold text-black mb-6 text-center md:text-left">Earned Value Management System</h1>
             <p className="text-lg text-gray-800 mb-8 leading-relaxed">
-              We use<span className='text-blue-600 text-xl'> Earned Value Management System (EVMS)</span> for tracking Schedule and Cost slippages in a Project, where requirements are well understood at the onset and design and architecture can be drafted in good detail.
+              We use<span className='text-black text-xl'> Earned Value Management System (EVMS)</span> for tracking Schedule and Cost slippages in a Project, where requirements are well understood at the onset and design and architecture can be drafted in good detail.
             </p>
             <h2 className="text-2xl font-semibold text-gray-900 mb-6">Advantages of Earned Value Management System:</h2>
             <ul className="list-disc list-inside text-gray-700 space-y-3 mb-8">
@@ -21,14 +27,7 @@ const ResourceCenterPage = () => {
               <li>Easily monitor budgeted cost of work performed (Earned Value) vs actual cost of material and resources (T&M)</li>
               <li>Easily monitor under budgeting (slow execution) of high complexity and priority modules to keep the overall project on track</li>
             </ul>
-            <div className="flex justify-center md:justify-start">
-              <a
-                href="#"
-                className="inline-block px-6 py-3 text-base font-medium text-white bg-blue-600 rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
-              >
-                Learn More
-              </a>
-            </div>
+             
           </div>
 
           {/* Image Content */}
@@ -44,7 +43,7 @@ const ResourceCenterPage = () => {
 
 
 
-        <section className="bg-white p-8 rounded-lg shadow-md border border-gray-200 mt-8 max-w-7xl mx-auto">
+        <section className="bg-white p-8 rounded-lg shadow-md border border-gray-200 mt-8 max-w-7xl mx-auto"data-aos="zoom-in-up">
           <h2 className="text-3xl font-semibold text-black mb-6">Agile Methodology: Sprint and Scrum</h2>
           <p className="text-lg text-gray-800 mb-8 leading-relaxed">
             We use Sprint and Scrum based Agile Methodology when requirements are evolving and design and architecture may change significantly as new requirements get added. This setup is also ideally suited when a client is conceptualizing a Minimum Viable Product in the shortest possible time to test market response. In this system, requirements, design, cost, and schedule can change up to acceptable levels of variance.
@@ -84,7 +83,7 @@ const ResourceCenterPage = () => {
           </div> */}
         </section>
 
-        <section className="bg-gray-50 p-5 rounded-lg shadow-lg border border-gray-200 mt-8 max-w-7xl mx-auto">
+        <section className="bg-gray-50 p-5 rounded-lg shadow-lg border border-gray-200 mt-8 max-w-7xl mx-auto"data-aos="zoom-in-up">
           <h2 className="text-3xl font-extrabold text-gray-900 mb-2 text-center">Risk Mitigation</h2>
           <p className="text-xl  text-gray-800 mb-4 leading-relaxed text-center">
             Risk mitigation is a critical aspect of project management and organizational strategy.

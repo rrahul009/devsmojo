@@ -46,7 +46,7 @@ const Carausel = () => {
                             </div>
                             <div className="p-6 rounded-lg text-start ">
                                 <h3 className="text-3xl font-bold text-black mb-2">
-                                    43%
+                                    57%
                                 </h3>
                                 <p className="text-lg text-black font-medium ">
                                     profiles in latest trending and in-demand skill clusters
@@ -90,7 +90,7 @@ const Carausel = () => {
                             </div>
                             <div className="p-6 rounded-lg text-start ">
                                 <h3 className="text-3xl font-bold text-black mb-2">
-                                    43%
+                                    57%
                                 </h3>
                                 <p className="text-lg text-black font-medium ">
                                     profiles in latest trending and in-demand skill clusters
@@ -132,7 +132,7 @@ const Carausel = () => {
                             </div>
                             <div className="p-6 rounded-lg text-start ">
                                 <h3 className="text-3xl font-bold text-black mb-2">
-                                    43%
+                                    57%
                                 </h3>
                                 <p className="text-lg text-black">
                                     Clients worldwide since 2015.

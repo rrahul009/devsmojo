@@ -63,7 +63,7 @@ const ServicePage = () => {
               </div>
               <div className="p-6 rounded-lg ">
                 <h3 className="text-3xl font-bold text-black mb-2">
-                  43%
+                  57%
                 </h3>
                 <p className="text-lg text-gray-700">
                   profiles in latest trending and in-demand skill clusters.
@@ -78,8 +78,8 @@ const ServicePage = () => {
           </div>
           <div className='relative flex justify-center items-center mt-10 md:mt-0'>
             <img src='https://www.oceansoftwares.com/assets/img/Services/customised.webp'
-             alt='Recruitment' className='object-cover rounded-lg' 
-             style={{ width: '550px', height: '350px' }} />
+              alt='Recruitment' className='object-cover rounded-lg'
+              style={{ width: '550px', height: '350px' }} />
           </div>
         </div>
 
@@ -107,7 +107,7 @@ const ServicePage = () => {
               </div>
               <div className="p-6 rounded-lg text-start ">
                 <h3 className="text-3xl font-bold text-black mb-2">
-                  43%
+                  57%
                 </h3>
                 <p className="text-lg text-black">
                   profiles in latest trending and in-demand skill clusters.
@@ -121,9 +121,9 @@ const ServicePage = () => {
               </button></Link>
           </div>
           <div className='flex justify-center items-center flex-grow mt-15'>
-            <img src='https://freedesignfile.com/upload/2018/10/Company-Product-Development-Group-Meeting-Stock-Photo-04.jpg' 
-            alt='Recruitment' className='object-cover rounded-sm'
-             style={{ width: '800px', height: '350px' }} />
+            <img src='https://freedesignfile.com/upload/2018/10/Company-Product-Development-Group-Meeting-Stock-Photo-04.jpg'
+              alt='Recruitment' className='object-cover rounded-sm'
+              style={{ width: '800px', height: '350px' }} />
           </div>
         </div>
       </Carousel>
@@ -133,8 +133,8 @@ const ServicePage = () => {
       <section className="p-2 bg-opacity-60 w-full max-w-screen-lg mx-auto">
         <h1 className="text-4xl font-bold mb-2 text-center">Our Services</h1>
         <div className='flex flex-col md:flex-row items-center justify-center'>
-          <p className="text-2xl  font-mono leading-snug mb-4 md:mb-0 md:mr-8 text-center md:text-center">
-            Leveraging over 50 years of combined engineering expertise, we have delivered successful solutions to more than 150 clients through over 1,000 engagements”
+          <p className="text-2xl  leading-snug mb-4 md:mb-0 md:mr-8 text-center md:text-center">
+            Leveraging over 50 years of combined engineering expertise, we have delivered successful solutions to more than 150 clients through over 1,000 engagements.
           </p>
 
         </div>
@@ -153,7 +153,7 @@ const ServicePage = () => {
             Expertise in Mobile Applications Development
           </h2>
           <p className="text-lg text-gray-700 mb-8 text-center">
-            ( At <span className="text-blue-600 font-bold">DevsMojo</span>, we specialize in creating high-quality mobile applications for both Android and iOS platforms.)
+            ( At <span className=" font-bold">devsmojo</span>, we specialize in creating high-quality mobile applications for both Android and iOS platforms.)
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
             {/* Android Development */}
@@ -235,7 +235,7 @@ const ServicePage = () => {
             {/* Custom Application Development */}
             <div
               className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105"
-              // data-aos="zoom-in-up"
+            // data-aos="zoom-in-up"
             >
               <div className="flex items-center mb-4">
                 <BuildIcon className="h-12 w-12 text-blue-600" />

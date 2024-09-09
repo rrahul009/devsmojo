@@ -13,12 +13,12 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">DevsMojo Technology</h3>
             <p className="text-gray-400 mb-2">D-76, Noida  Sector 63</p>
             <p className="text-gray-400 mb-2">Noida, Uttar Pradesh, 201301</p>
-            <p className="text-gray-400 mb-2">Phone: 0120-496-3453
+            <p className="text-gray-400 mb-2">Phone: 9354097674
 
-</p>
+            </p>
             <p className="text-gray-400">Email: info@DevsMojo.com
 
-</p>
+            </p>
           </div>
 
           {/* Navigation Links */}
@@ -38,7 +38,14 @@ const Footer = () => {
             <div className="flex space-x-4">
               {/* <a href="https://www.facebook.com/DevsMojotechnologies" className="text-gray-400 hover:text-white"><FaFacebookF /></a> */}
               {/* <a href="" className="text-gray-400 hover:text-white"><FaTwitter /></a> */}
-              <a href="https://www.linkedin.com/company/devsmojo-technologies-private-limited/?viewAsMember=true" className="text-gray-400 hover:text-white"><FaLinkedinIn /></a>
+              <a
+                href="https://www.linkedin.com/company/devsmojo-technologies-private-limited/?viewAsMember=true"
+                className="text-gray-400 hover:text-white"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedinIn />
+              </a>
               {/* <a href="https://www.instagram.com/DevsMojotechnologies/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
                         <FaInstagram size={16} />
                     </a> */}
