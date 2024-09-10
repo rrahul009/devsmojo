@@ -97,7 +97,7 @@ const Navbar = () => {
       </header>
 
       {/* Global style */}
-      <style jsx global>{`
+      {/* <style jsx global>{`
         @keyframes shake {
           0% { transform: translateX(0); }
           25% { transform: translateX(-10px); }
@@ -111,10 +111,10 @@ const Navbar = () => {
         }
 
         /* Custom shadow for mobile menu */
-        .shadow-lg {
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        // .shadow-lg {
+          // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-      `}</style>
+      {/* `}</style>  */}
     </>
   );
 };
