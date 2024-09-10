@@ -27,11 +27,11 @@ const page = () => {
       <MainSection />
       {/* <TechRecruit /> */}
       {/* <Services /> */}
-      <PitchSection/>
-      <TalkToExpert/>
-      <TechnologiesSection/>
+      <PitchSection />
+      <TalkToExpert />
+      <TechnologiesSection />
       {/* <InDemandSkillsPage/> */}
-      <BarGraph/>
+      <BarGraph />
       {/* <TechnologyPieChart/> */}
       {/* <PricingSection/> */}
       {/* <OurPartner/>
@@ -40,7 +40,7 @@ const page = () => {
       {/* <VisualShowcase/> */}
       {/* <Video /> */}
       {/* <Schedular/> */}
-      <MeetingPage/>
+      <MeetingPage />
 
       <Footer />
     </div>

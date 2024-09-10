@@ -16,7 +16,7 @@ const Footer = () => {
             <p className="text-gray-400 mb-2">Phone: 9354097674
 
             </p>
-            <p className="text-gray-400">Email: info@DevsMojo.com
+            <p className="text-gray-400">Email: rakesh@devsmojo.com
 
             </p>
           </div>

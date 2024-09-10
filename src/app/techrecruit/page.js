@@ -244,18 +244,12 @@ const TechRecruitmentPage = () => {
                 <div className="hidden md:block w-px bg-gray-300 mx-4"></div>
 
                 {/* Contact Section */}
-                <div className="w-full md:w-1/2 px-4 flex items-center justify-center">
-                  <div className=" p-8 rounded-lg  max-w-md transform transition-transform hover:scale-105 duration-300">
-                    <p className="text-gray-800 mb-4 text-lg font-semibold">
-                      Send a message  to explore
-                    </p>
-                    <Link
-                      href="/aboutus/#schedular"
-                      className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-colors duration-300"
-                    >
-                      Contact Us
-                    </Link>
-                  </div>
+                <div className=" md:w-1/2 px-4 mt-12 ">
+                  <img src='https://media.licdn.com/dms/image/D5612AQHI8MBm8BbrAQ/article-cover_image-shrink_600_2000/0/1698741958743?e=2147483647&v=beta&t=Y-40sKA-rGtKHlmdnQdjR27mqe9_X7vzLpMjkSQ2cbA'
+                  className='rounded-lg'
+                style={{height:'330px'}}
+                  />
+
                 </div>
               </div>
             </div>

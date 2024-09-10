@@ -4,7 +4,7 @@ import { FaCheckCircle } from 'react-icons/fa'; // Importing the check icon
 
 const MeetingPage = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
+    <div className=" bg-gray-100 flex items-center justify-center p-3">
       <div className="flex flex-col md:flex-row w-full max-w-6xl bg-white rounded-lg shadow-lg relative overflow-hidden">
         {/* Background Image */}
         {/* <div className="absolute inset-0">
@@ -44,14 +44,16 @@ const MeetingPage = () => {
                 <p className="text-gray-700">Learn how to source skilled and experienced software developers.</p>
               </div>
             </div>
-          <Link href="/aboutus/#schedular">
-          <button
-              type="button"
-              className="mt-6 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
-            >
-              Schedule a Call
-            </button>
-          </Link>
+            <Link href="/aboutus/#schedular">
+              <button
+                type="button"
+                className="mt-6 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+              >
+                Schedule a Call 
+              </button>
+            </Link>
+            <p className='mt-2'>Email:<Link href="/aboutus/#schedular"><span className='text-blue-600'>rakesh@devsmojo.com</span></Link></p>
+           
             {/* Uncomment and replace with your trusted by data */}
             {/* <h2 className="text-xl font-semibold mt-8">TRUSTED BY</h2>
             <p className="text-gray-600 mt-2">This data</p> */}

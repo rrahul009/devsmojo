@@ -70,11 +70,7 @@ const ServicePage = () => {
                 </p>
               </div>
             </div>
-            <Link href="/aboutus/#schedular">
-              <button className="flex items-center border-2 border-black py-3 px-6 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-2 ml-5">
-                <span className="mr-2">Learn More</span>
-                <ArrowDownwardIcon />
-              </button></Link>
+            
           </div>
           <div className='relative flex justify-center items-center mt-10 md:mt-0'>
             <img src='https://www.oceansoftwares.com/assets/img/Services/customised.webp'
@@ -96,29 +92,17 @@ const ServicePage = () => {
             <p className="text-md text-gray-700 leading-7 mb-2">
               Market Research, Customer Surveys, User Stories, Marketing Collaterals and Content.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="p-6 rounded-lg text-start  ">
-                <h3 className="text-3xl font-bold text-black mb-2">
-                  200K+
-                </h3>
-                <p className="text-lg text-black">
-                  pre-verified resume of Software Professionals
-                </p>
-              </div>
-              <div className="p-6 rounded-lg text-start ">
-                <h3 className="text-3xl font-bold text-black mb-2">
-                  57%
-                </h3>
-                <p className="text-lg text-black">
-                  profiles in latest trending and in-demand skill clusters.
-                </p>
-              </div>
-            </div>
-            <Link href="/aboutus/#schedular">
-              <button className="flex items-center border-2 border-black py-3 px-6 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-2">
-                <span className="mr-2">Learn More</span>
-                <ArrowDownwardIcon />
-              </button></Link>
+            <div className="grid grid-cols-1 gap-6">
+          <div className="p-6 rounded-lg text-start ">
+            <h3 className="text-3xl font-bold text-black mb-2">
+              50+
+            </h3>
+            <p className="text-xl text-gray-700 leading-relaxed">
+              Years of combined experience of our experts in delivering Software Products in diverse Industry Verticals and Technology Horizontals.
+            </p>
+          </div>
+        </div>
+            
           </div>
           <div className='flex justify-center items-center flex-grow mt-15'>
             <img src='https://freedesignfile.com/upload/2018/10/Company-Product-Development-Group-Meeting-Stock-Photo-04.jpg'

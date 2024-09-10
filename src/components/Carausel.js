@@ -57,7 +57,7 @@ const Carausel = () => {
                         <Link href="/techrecruit">
                             <button className="flex items-center border-2 border-black py-3 px-6 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-2">
                                 <span className="mr-2">Learn More</span>
-                                <ArrowDownwardIcon />
+                                {/* <ArrowDownwardIcon /> */}
                             </button></Link>
                     </div>
                     <div className='flex justify-center items-center flex-grow mt-15'>
@@ -101,7 +101,7 @@ const Carausel = () => {
                         <Link href="/services">
                             <button className="flex items-center border-2 border-black py-3 px-6 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-2">
                                 <span className="mr-2">Learn More</span>
-                                <ArrowDownwardIcon />
+                                {/* <ArrowDownwardIcon /> */}
                             </button></Link>
                     </div>
                     <div className='relative flex justify-center items-center mt-10 md:mt-0'>
@@ -136,7 +136,7 @@ const Carausel = () => {
         <Link href="/services/#ai">
           <button className="flex items-center border-2 border-black py-3 px-6 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-4">
             <span className="mr-2">Learn More</span>
-            <ArrowDownwardIcon />
+            {/* <ArrowDownwardIcon /> */}
           </button>
         </Link>
       </div>
