@@ -85,7 +85,7 @@ const PitchSection = () => {
                                     <Link href="/aboutus/#schedular">
                                         <li className=" ml-5 mt-5">
 
-                                            <strong className="font-semibold text-blue-600">Talk with Our Experts</strong>
+                                            <strong className="font-semibold text-blue-600">Talk to Our Experts</strong>
 
                                         </li></Link>
                                 </ul>

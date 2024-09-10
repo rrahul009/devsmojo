@@ -52,7 +52,7 @@ const MeetingPage = () => {
                 Schedule a Call 
               </button>
             </Link>
-            <p className='mt-2'>Email:<Link href="/aboutus/#schedular"><span className='text-blue-600'>rakesh@devsmojo.com</span></Link></p>
+            <p className='mt-2'>Email:<Link href="/aboutus/#schedular"><span className='text-blue-600'>dm@devsmojo.com</span></Link></p>
            
             {/* Uncomment and replace with your trusted by data */}
             {/* <h2 className="text-xl font-semibold mt-8">TRUSTED BY</h2>
