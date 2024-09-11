@@ -111,7 +111,7 @@ const BarGraph = () => {
 
   return (
     <div className='p-5'>
-      <p className='text-center text-4xl font-bold'>Our Strength in Top Trending Skills</p>
+      <p className='text-center text-4xl font-bold'>PFA Infographic for Our Strength in Top trending skills and approve.</p>
       <div style={{ height: '510px', display: 'flex', justifyContent: 'center' }}>
         <Bar data={data} options={options} />
       </div>

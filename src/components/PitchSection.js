@@ -18,13 +18,13 @@ const PitchSection = () => {
                 <section className="mb-5">
                     <h1 className="text-4xl font-bold text-center mb-6  text-black">“Why choose Our Software Consulting Services?”</h1>
                     <div className="flex flex-col md:flex-row items-start md:items-center md:space-x-8 space-y-6 md:space-y-0">
-                        <div className="flex-shrink-0 md:w-1/2 flex justify-start md:justify-start mt-6 md:mt-0 ml-6">
+                        <div className="flex-shrink-0 md:w-1/2 flex justify-start md:justify-start mt-6 md:mt-0 ml-3 mr-2">
                             <img
                                 // src="https://img.freepik.com/free-vector/hand-drawn-flat-design-api-illustration_23-2149379500.jpg"
                                 src='/software_consulting_services.jpg'
                                 alt="Software Consulting"
                                 className="object-cover rounded-md"
-                                style={{ height: '340px', width: '570px' }}
+                                style={{ height: '320px', width: '570px' }}
                             />
                         </div>
                         <div className="flex-1 md:w-1/2 mb-6 md:mb-0">

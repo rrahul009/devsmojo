@@ -73,9 +73,9 @@ const MeetOurTeam = () => {
             />
           </div>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 p-5">
           <h2 className="text-4xl font-extrabold text-gray-900 mb-5 text-center md:text-center">Our Vision</h2>
-          <p className="text-lg text-gray-800 leading-relaxed">
+          <p className="text-md text-gray-600 leading-relaxed">
             Our vision is to provide the best possible service to our clients. We don't promise cost cuts, but we assure high quality outcomes by deploying only the most talented and experienced professionals for the job. Maintaining utmost transparency and ethics is a priority for us. With complete honesty and a no-BS approach we derive true pleasure only when our clients have derived more than full worth of their money and time spent on us.
           </p>
         </div>

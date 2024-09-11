@@ -36,78 +36,106 @@ const ServicePage = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <Carousel>
+      <Carousel
+      showStatus={false}
+      >
         {/* second slide */}
-        <div className='bg-gray-100 p-5 flex flex-col md:flex-row items-center justify-between
-         py-2 px-2 md:px-2'data-aos="zoom-in-up">
-          <div className="max-w-6xl p-8">
-            <p className="text-5xl font-extrabold leading-tight mb-2">
-              <span className="text-black">Software Development Services</span>
+        <div className='bg-gray-100 mt-5 flex flex-col md:flex-row items-center justify-between py-2 px-4'>
+          <div className="max-w-6xl p-4 flex-1">
+            <p className="text-2xl sm:text-2xl md:text-4xl font-bold leading-tight mb-4">
+              Software Development Services
             </p>
-            <p className="text-2xl font-serif text-black mt-2 leading-relaxed mb-2">
-              We meet your expectations where most fall short,<br /> from low-Touch to high-Touch engagements.
+            <p className="hidden sm:block font-serif text-base sm:text-lg md:text-2xl text-black mt-2 leading-relaxed mb-4">
+              We meet your expectations where most fall short, from low-Touch to high-Touch engagements.
             </p>
-            <p className="text-md text-gray-800 leading-relaxed mb-2">
-              Low-Touch: Hire on hourly rate, starting remotely with few hours/week.
-              <br />
-              <span className='text-md'>High-Touch: We build the entire thing, operate, and then transfer to you when you want it.</span>
+            <p className="text-sm sm:text-base md:text-md text-gray-800 leading-relaxed md:mb-5 mb-4 ">
+              Low-Touch: Hire on an hourly rate, starting remotely with a few hours/week.
+
+
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-2">
-              <div className="p-6 rounded-lg ">
-                <h3 className="text-3xl font-bold text-black mb-2">
-                  200K+
-                </h3>
-                <p className="text-lg text-gray-700">
-                  pre-verified resume of Software Professionals
-                </p>
+            <p className='text-sm sm:text-base md:text-md md:mt-5 md:mb-4 mb-2'>High-Touch: We build the entire thing, operate, and then transfer to you when you want it.</p>
+            <div className="flex flex-col md:grid md:grid-cols-2 gap-6 ">
+              <div className="flex-1 flex items-center justify-center  rounded-lg text-start">
+                <div>
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-black md:mt-5 ">
+                    200K+
+                  </h3>
+                  <p className="text-sm sm:text-base md:text-lg text-black md:mt-4">
+                    pre-verified resumes of Software Professionals
+                  </p>
+                </div>
               </div>
-              <div className="p-6 rounded-lg ">
-                <h3 className="text-3xl font-bold text-black mb-2">
-                  57%
-                </h3>
-                <p className="text-lg text-gray-700">
-                  profiles in latest trending and in-demand skill clusters.
-                </p>
+              <div className="flex-1 flex items-center justify-center  rounded-lg text-start">
+                <div>
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-black md:mt-5">
+                    57%
+                  </h3>
+                  <p className="text-sm sm:text-base md:text-lg text-black font-medium md:mt-4">
+                    profiles in latest trending and in-demand skill clusters
+                  </p>
+                </div>
               </div>
             </div>
-            
+            <div>
+              <Link href="/services">
+                <button className="flex items-center py-3 px-6
+                             text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-4 md:mt-8">
+                  <span className="mr-2"> </span>
+                  {/* <ArrowDownwardIcon /> */}
+                </button>
+              </Link>
+            </div>
           </div>
-          <div className='relative flex justify-center items-center mt-10 md:mt-0'>
-            <img src='https://www.oceansoftwares.com/assets/img/Services/customised.webp'
-              alt='Recruitment' className='object-cover rounded-lg'
-              style={{ width: '550px', height: '350px' }} />
+          <div className='hidden md:flex flex-1 justify-center items-center mt-6'>
+            <img
+              src='https://www.oceansoftwares.com/assets/img/Services/customised.webp'
+              alt='Custom Software Development'
+              className='object-cover rounded-lg max-w-full h-auto'
+              style={{ maxWidth: '900px', maxHeight: '400px' }}
+            />
           </div>
         </div>
 
         {/* third slide */}
-        <div className='flex bg-gray-100 p-3'>
-          <div className="max-w-4xl mx-10 p-2">
-            <p className="text-5xl font-extrabold leading-[133%] mb-6">
-              Partner in your exciting
-              <span className="text-blue-800"> Product Development </span>journey
+        <div className='flex flex-col md:flex-row bg-gray-100 p-2 py-2 md:p-5 md:mt-5'>
+          <div className="max-w-5xl mx-auto p-4 flex-1">
+            <p className="text-2xl md:text-4xl font-bold leading-tight mb-2 md:mb-6">
+              Partner in your exciting <br />
+              <span className="text-blue-800">Product Development</span> journey
             </p>
-            <p className="text-md text-gray-700 leading-[133%] mb-4">
-              Hire our seasoned Product Specialists, Business Analysts and Data Scientists for
+            <p className="text-md md:text-md text-gray-700 leading-relaxed mb-2 md:mb-5">
+              Hire our seasoned Product Specialists, Business Analysts, and Data Scientists for
             </p>
-            <p className="text-md text-gray-700 leading-7 mb-2">
-              Market Research, Customer Surveys, User Stories, Marketing Collaterals and Content.
+            <p className="hidden sm:block text-base md:text-md text-gray-700 leading-relaxed mb-4 md:mb-6">
+              Market Research, Customer Surveys, User Stories, Marketing Collaterals, and Content.
             </p>
-            <div className="grid grid-cols-1 gap-6">
-          <div className="p-6 rounded-lg text-start ">
-            <h3 className="text-3xl font-bold text-black mb-2">
-              50+
-            </h3>
-            <p className="text-xl text-gray-700 leading-relaxed">
-              Years of combined experience of our experts in delivering Software Products in diverse Industry Verticals and Technology Horizontals.
-            </p>
+            <div className="grid grid-cols-1 gap-6 mb-2 md:mb-6">
+              <div className=" rounded-lg text-start">
+                <h3 className="text-2xl md:text-3xl font-bold text-black  md:mb-5 ml-5">
+                  50+
+                </h3>
+                <p className="text-base md:text-lg text-gray-700 leading-relaxed ml-5">
+                  Years of combined experience of our experts in delivering Software Products <br /> in diverse Industry Verticals and Technology Horizontals.
+                </p>
+              </div>
+            </div>
+            <div style={{ width: '150px' }}>
+              <Link href="/services/#ai" >
+                <p className="flex items-center  py-3 px-6
+                                 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-10 md:mb-8">
+                  <span className="mr-2"></span>
+                  {/* <ArrowDownwardIcon /> */}
+                </p>
+              </Link>
+            </div>
           </div>
-        </div>
-            
-          </div>
-          <div className='flex justify-center items-center flex-grow mt-15'>
-            <img src='https://freedesignfile.com/upload/2018/10/Company-Product-Development-Group-Meeting-Stock-Photo-04.jpg'
-              alt='Recruitment' className='object-cover rounded-sm'
-              style={{ width: '800px', height: '350px' }} />
+          <div className='hidden md:flex justify-center items-center mt-6 md:mt-0 flex-shrink-0'>
+            <img
+              src='https://freedesignfile.com/upload/2018/10/Company-Product-Development-Group-Meeting-Stock-Photo-04.jpg'
+              alt='Product Development'
+              className='object-cover rounded-sm max-w-full'
+              style={{ maxWidth: '1000px', height: 'auto' }}
+            />
           </div>
         </div>
       </Carousel>

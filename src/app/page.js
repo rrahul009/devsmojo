@@ -16,6 +16,7 @@ import Services from '@/components/Services'
 import TalkToExpert from '@/components/TalkToExpert'
 import TechnologiesSection from '@/components/TechnologyWeUse'
 import TechRecruit from '@/components/TechRecruitment'
+import TrendingSkills from '@/components/TrendingSkills'
 import Video from '@/components/Video'
 import VisualShowcase from '@/components/VisualShow'
 import React from 'react'
@@ -25,21 +26,21 @@ const page = () => {
     <div>
       <Navbar />
       <MainSection />
-      {/* <TechRecruit /> */}
-      {/* <Services /> */}
+      
       <PitchSection />
       <TalkToExpert />
       <TechnologiesSection />
       {/* <InDemandSkillsPage/> */}
-      <BarGraph />
+      {/* <BarGraph /> */}
       {/* <TechnologyPieChart/> */}
       {/* <PricingSection/> */}
       {/* <OurPartner/>
        <ClientSection/>
        <OurClient/> */}
-      {/* <VisualShowcase/> */}
+      
       {/* <Video /> */}
-      {/* <Schedular/> */}
+      
+      <TrendingSkills/>
       <MeetingPage />
 
       <Footer />

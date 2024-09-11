@@ -9,18 +9,18 @@ const TalkToExpert = () => {
         return cleanupAOS; // Cleanup AOS on unmount
     }, []);
     return (
-        <div className="p-8 bg-gray-100 min-h-screen mt-5" data-aos="zoom-in-up">
+        <div className="p-2 px-2 bg-gray-100 min-h-screen mt-5 gap-5" data-aos="zoom-in-up">
             <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Talk to Our Experts</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
 
                 {/* Card 1 */}
-                <div className="bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105" data-aos="zoom-in-up">
+                <div className="bg-white p-2 rounded-lg shadow-lg transition-transform transform hover:scale-105" data-aos="zoom-in-up">
                     <div className='flex justify-center mt-5'>
                         <img
                             // src="https://miro.medium.com/v2/resize:fit:1400/0*C_ucOsvJldViSxv-.png"
                             src='/AI_Generated.jpeg'
                             alt="How you can leverage AI"
-                            className=" rounded-t-lg"
+                            className=" rounded-lg"
                             style={{ height: '200px', width: '400px' }}
                         />
                     </div>
@@ -41,12 +41,12 @@ const TalkToExpert = () => {
 
 
                 {/* Card 2 */}
-                <div className=" bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105" data-aos="zoom-in-up">
+                <div className=" bg-white rounded-lg p-2 shadow-lg transition-transform transform hover:scale-105" data-aos="zoom-in-up">
                     <div className='flex justify-center mt-5'>
                         <img
                             src="https://www.drabito.com/img/blog/blog-1/blog-image-1.webp"
                             alt="How you can fast track your MVP"
-                            className="object-cover rounded-t-lg"
+                            className="object-cover rounded-lg"
                             style={{ height: '200px' }}
                         />
                     </div>
@@ -69,12 +69,12 @@ const TalkToExpert = () => {
 
 
                 {/* Card 3 */}
-                <div className="bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105" data-aos="zoom-in-up">
+                <div className="bg-white rounded-lg p-2 shadow-lg transition-transform transform hover:scale-105" data-aos="zoom-in-up">
                     <div className='flex justify-center mt-5'>
                         <img
                             src="https://fiverr-res.cloudinary.com/videos/t_main1,q_auto,f_auto/erjocwagadduzoioiz7j/do-market-product-research-and-industry-analysis.png"
                             alt="We can Market Research your next Product"
-                            className="object-cover rounded-t-lg"
+                            className="object-cover rounded-lg"
                             style={{ height: '200px' }}
                         />
                     </div>
@@ -97,12 +97,12 @@ const TalkToExpert = () => {
 
 
                 {/* Card 4 */}
-                <div className="bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105" data-aos="zoom-in-up">
+                <div className="bg-white rounded-lg p-2 shadow-lg transition-transform transform hover:scale-105" data-aos="zoom-in-up">
                     <div className='flex justify-center mt-5'>
                         <img
                             src="https://www.ismartrecruit.com/upload/blog/main_image/RPO1.webp"
                             alt="Learn about our Talent Selection process"
-                            className="object-cover rounded-t-lg"
+                            className="object-cover rounded-lg"
                             style={{ height: '200px' }}
                         />
                     </div>
