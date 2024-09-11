@@ -35,7 +35,7 @@ const ResourceCenterPage = () => {
             <img
               src='/Resource_center.jpeg'
               alt="Earned Value Management"
-              className="object-cover rounded-lg shadow-lg border border-gray-200 w-full h-72 md:h-80"
+              className="object-contain rounded-lg shadow-lg border border-gray-200 w-full h-72 md:h-80"
             />
           </div>
         </div>
