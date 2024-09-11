@@ -31,7 +31,7 @@ const PitchSection = () => {
                             {/* <h2 className="text-2xl font-semibold text-blue-600 mb-4">Why Choose Our Software Consulting?</h2> */}
                             <ul className="space-y-4">
                                 <li className="flex items-start">
-                                    <span className="text-blue-500 text-xl mr-5"><FileDownloadDoneIcon /></span>
+                                    <span className="text-blue-500 text-xl mr-3"><FileDownloadDoneIcon /></span>
                                     <span>
                                         <strong>Minimize Development Challenges:</strong> Whether you're looking to reduce Go-To-Market time, development costs, or market-fit issues, we promise reliable outcomes tailored to your needs.
                                     </span>

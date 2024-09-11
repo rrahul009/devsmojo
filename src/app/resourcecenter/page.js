@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -9,48 +9,45 @@ const ResourceCenterPage = () => {
   useEffect(() => {
     const cleanupAOS = initializeAOS();
     return cleanupAOS; // Cleanup AOS on unmount
-}, []);
+  }, []);
+
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100"data-aos="zoom-in-up">
+    <div className="min-h-screen flex flex-col bg-gray-100">
       <Navbar />
-      <main className="flex-1 p-2">
-        <div className="max-w-7xl mx-auto bg-white p-3 rounded-lg shadow-lg border border-gray-200 flex flex-col md:flex-row">
+      <main className="flex-1 p-4 md:p-8">
+        <div className="max-w-7xl mx-auto bg-white p-4 md:p-8 rounded-lg shadow-lg border border-gray-200 flex flex-col md:flex-row">
           {/* Text Content */}
-          <div className="flex-1 p-3 md:p-8 flex flex-col justify-center">
-            <h1 className="text-3xl font-bold text-black mb-6 text-center md:text-left">Earned Value Management System</h1>
-            <p className="text-lg text-gray-800 mb-8 leading-relaxed">
-              We use<span className='text-black text-xl'> Earned Value Management System (EVMS)</span> for tracking Schedule and Cost slippages in a Project, where requirements are well understood at the onset and design and architecture can be drafted in good detail.
+          <div className="flex-1 p-4 md:p-8 flex flex-col justify-center">
+            <h1 className="text-3xl md:text-4xl font-bold text-black mb-4 md:mb-6">Earned Value Management System</h1>
+            <p className="text-lg text-gray-800 mb-6 leading-relaxed">
+              We use <span className='text-black text-xl'>Earned Value Management System (EVMS)</span> for tracking Schedule and Cost slippages in a Project, where requirements are well understood at the onset and design and architecture can be drafted in good detail.
             </p>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-6">Advantages of Earned Value Management System:</h2>
-            <ul className="list-disc list-inside text-gray-700 space-y-3 mb-8">
+            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">Advantages of Earned Value Management System:</h2>
+            <ul className="list-disc list-inside text-gray-700 space-y-3 mb-6">
               <li>A simple system for tracking Cost and Schedule slippages</li>
               <li>Easily monitor budgeted cost of work performed (Earned Value) vs actual cost of material and resources (T&M)</li>
               <li>Easily monitor under budgeting (slow execution) of high complexity and priority modules to keep the overall project on track</li>
             </ul>
-             
           </div>
 
           {/* Image Content */}
-          <div className="flex-1 p-6 md:p-8 flex justify-center items-center">
+          <div className="flex-1 p-4 md:p-8 flex justify-center items-center">
             <img
-              // src="https://static.vecteezy.com/system/resources/previews/003/519/648/original/data-center-isolated-cartoon-concept-engineer-work-at-server-rack-room-cloud-technology-people-scene-in-flat-design-illustration-for-blogging-website-mobile-app-promotional-materials-vector.jpg" // Replace with your actual image URL
               src='/Resource_center.jpeg'
               alt="Earned Value Management"
-              className=" object-fill rounded-lg shadow-lg border border-gray-200" style={{height:'350px', marginTop:'-20px'}}
+              className="object-cover rounded-lg shadow-lg border border-gray-200 w-full h-72 md:h-80"
             />
           </div>
         </div>
 
-
-
-        <section className="bg-white p-8 rounded-lg shadow-md border border-gray-200 mt-8 max-w-7xl mx-auto"data-aos="zoom-in-up">
-          <h2 className="text-3xl font-semibold text-black mb-6">Agile Methodology: Sprint and Scrum</h2>
-          <p className="text-lg text-gray-800 mb-8 leading-relaxed">
+        <section className="bg-white p-4 md:p-8 rounded-lg shadow-md border border-gray-200 mt-8 max-w-7xl mx-auto" data-aos="zoom-in-up">
+          <h2 className="text-3xl md:text-4xl font-semibold text-black mb-4">Agile Methodology: Sprint and Scrum</h2>
+          <p className="text-lg text-gray-800 mb-6 leading-relaxed">
             We use Sprint and Scrum based Agile Methodology when requirements are evolving and design and architecture may change significantly as new requirements get added. This setup is also ideally suited when a client is conceptualizing a Minimum Viable Product in the shortest possible time to test market response. In this system, requirements, design, cost, and schedule can change up to acceptable levels of variance.
           </p>
           <div className="flex flex-col lg:flex-row gap-8">
             <div className="flex-1 bg-blue-50 p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold text-black mb-4">Key Benefits:</h3>
+              <h3 className="text-xl md:text-2xl font-semibold text-black mb-4">Key Benefits:</h3>
               <ul className="list-disc list-inside text-gray-700 space-y-2">
                 <li>Adaptable to changing requirements and market conditions</li>
                 <li>Fast delivery of Minimum Viable Product (MVP) for market testing</li>
@@ -68,28 +65,19 @@ const ResourceCenterPage = () => {
               <img
                 src="https://static.javatpoint.com/difference/images/agile-vs-waterfall-model.png"
                 alt="Agile vs Waterfall"
-                className="w-full  rounded-lg shadow-md"
-                style={{height:'400px'}}
+                className="w-full h-auto rounded-lg shadow-md"
               />
             </div>
           </div>
-          {/* <div className="mt-8 text-center">
-            <a
-              href="#"
-              className="inline-block px-6 py-3 text-base font-medium text-white bg-blue-600 rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
-            >
-              Learn More About Agile
-            </a>
-          </div> */}
         </section>
 
-        <section className="bg-gray-50 p-5 rounded-lg shadow-lg border border-gray-200 mt-8 max-w-7xl mx-auto"data-aos="zoom-in-up">
-          <h2 className="text-3xl font-extrabold text-gray-900 mb-2 text-center">Risk Mitigation</h2>
-          <p className="text-xl  text-gray-800 mb-4 leading-relaxed text-center">
+        <section className="bg-gray-50 p-4 md:p-8 rounded-lg shadow-lg border border-gray-200 mt-8 max-w-7xl mx-auto" data-aos="zoom-in-up">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 text-center">Risk Mitigation</h2>
+          <p className="text-xl text-gray-800 mb-6 leading-relaxed text-center">
             Risk mitigation is a critical aspect of project management and organizational strategy.
           </p>
-          <h3 className="text-2xl font-semibold text-gray-900 mb-2">Our Risk Mitigation Strategy</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4 text-center">Our Risk Mitigation Strategy</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300 relative">
               <div className="absolute top-0 right-0 p-4">
                 <FaLightbulb className="w-12 h-12 text-blue-600" />
@@ -150,16 +138,7 @@ const ResourceCenterPage = () => {
               </p>
             </div>
           </div>
-          {/* <div className="mt-8 text-center">
-            <a
-              href="#"
-              className="inline-block px-6 py-3 text-base font-medium text-white bg-blue-600 rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
-            >
-              Learn More About Our Risk Mitigation Practices
-            </a>
-          </div> */}
         </section>
-
       </main>
       <Footer />
     </div>
