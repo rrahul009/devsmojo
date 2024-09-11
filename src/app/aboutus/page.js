@@ -38,7 +38,7 @@ const MeetOurTeam = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-gray-100 p-2 py-0"data-aos="zoom-in-up">
+      <div className="bg-gray-100 p-2 md:py-5"data-aos="zoom-in-up">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">
             {/* Text Section */}
@@ -73,7 +73,7 @@ const MeetOurTeam = () => {
             />
           </div>
         </div>
-        <div className="flex-1 p-5">
+        <div className="flex-1 md:p-5">
           <h2 className="text-4xl font-extrabold text-gray-900 mb-5 text-center md:text-center">Our Vision</h2>
           <p className="text-md text-gray-600 leading-relaxed">
             Our vision is to provide the best possible service to our clients. We don't promise cost cuts, but we assure high quality outcomes by deploying only the most talented and experienced professionals for the job. Maintaining utmost transparency and ethics is a priority for us. With complete honesty and a no-BS approach we derive true pleasure only when our clients have derived more than full worth of their money and time spent on us.
