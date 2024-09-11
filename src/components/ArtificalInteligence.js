@@ -43,9 +43,9 @@ const ArtificialIntelligence = () => {
 
     return (
         <div className="py-0 bg-gray-100 rounded-lg shadow-lg mt-8">
-            <section id="ai" className="mx-auto mb-12">
+            <section id="ai" className=" mb-12">
                 {/* Image and Text Section */}
-                <div className="p-8">
+                <div className="md:p-8 p-4">
                     <div className="flex flex-col md:flex-row items-start md:items-center md:space-x-8 space-y-6 md:space-y-0">
                         {/* Image Section */}
 

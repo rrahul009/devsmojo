@@ -18,7 +18,7 @@ const Carausel = () => {
                 `}
             </style>
             <Carousel
-                // autoPlay={true}
+                autoPlay={true}
                 infiniteLoop={true}
                 interval={3000}
                 stopOnHover={true}
@@ -31,18 +31,18 @@ const Carausel = () => {
                             Premium <span className="text-blue-600 ml-2">IT Recruitment</span> through pre-vetted Software Profiles
                         </p>
 
-                        <p className="text-lg md:text-xl font-semibold leading-tight md:mb-2 mb:0 md:mt-4 mt-5">
+                        <p className="text-lg md:text-xl font-semibold leading-tight md:mb-2 mb:0 md:mt-4 mt-5 md:mr-10">
                             Deploy best Talent to Most challenging Projects
                         </p>
                         <p className="text-base md:text-xl text-gray-700 leading-7 mb-2">
                             {/* Cherry pick from 200K+ profiles of Industry Best <span className='text-blue-500 font-bold text-xl'>Software professionals</span> */}
                         </p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:mb-6 mb-1 md:mt-5 mt-0">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:mb-6 mb-1 md:mt-5 mt-0 md:ml-6">
                             <div className="rounded-lg text-start md:mr-4 lg:mr-6">
-                                <h3 className="text-2xl md:text-3xl font-bold text-black mb-2 mt-5 md:mt-5 md:mb-5">
+                                <h3 className="text-2xl md:text-3xl font-bold text-black mb-2 mt-5 md:mt-5 md:mb-5 md:ml-2">
                                     200K+
                                 </h3>
-                                <p className="text-base md:text-lg text-black">
+                                <p className="text-base md:text-lg text-black md:ml-2">
                                     pre-verified resumes of Software Professionals
                                 </p>
                             </div>
@@ -55,13 +55,15 @@ const Carausel = () => {
                                 </p>
                             </div>
                         </div>
-                        <Link href="/techrecruit">
-                            <button className="flex items-center border-2 border-black py-3 px-6
+                        <div className='md:ml-8'>
+                            <Link href="/techrecruit">
+                                <button className="flex items-center border-2 border-black py-3 px-6
                              text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg md:mt-4 mt-2">
-                                <span className="mr-2">Learn More</span>
-                                {/* <ArrowDownwardIcon /> */}
-                            </button>
-                        </Link>
+                                    <span className="mr-2">Learn More</span>
+                                    {/* <ArrowDownwardIcon /> */}
+                                </button>
+                            </Link>
+                        </div>
                     </div>
                     <div className='hidden md:flex flex-1 justify-center items-center md:ml-6 lg:ml-8'>
                         <img
@@ -79,14 +81,14 @@ const Carausel = () => {
                             Software Development Services
                         </p>
                         <p className="hidden sm:block font-serif text-base sm:text-lg md:text-2xl text-black mt-2 leading-relaxed mb-4">
-                            We meet your expectations where most fall short, from low-Touch to high-Touch engagements.
+                            We meet your expectations where most fall short,<br /> <span className='md:mr-7'>from low-Touch to high-Touch engagements.</span>
                         </p>
-                        <p className="text-sm sm:text-base md:text-md text-gray-800 leading-relaxed md:mb-5 mb-4 ">
+                        <p className="text-sm sm:text-base md:text-md text-gray-800 leading-relaxed md:mb-3 mb-4 md:mr-1">
                             Low-Touch: Hire on an hourly rate, starting remotely with a few hours/week.
 
 
                         </p>
-                        <p className='text-sm sm:text-base md:text-md md:mt-5 md:mb-4 mb-2'>High-Touch: We build the entire thing, operate, and then transfer to you when you want it.</p>
+                        <p className='text-sm sm:text-base md:text-md text-gray-800 leading-relaxed md:mb-5 mb-4 '>High-Touch: We build the entire thing, operate, and then transfer to you when you want it.</p>
                         <div className="flex flex-col md:grid md:grid-cols-2 gap-6 ">
                             <div className="flex-1 flex items-center justify-center  rounded-lg text-start">
                                 <div>
@@ -135,27 +137,29 @@ const Carausel = () => {
                             Partner in your exciting <br />
                             <span className="text-blue-800">Product Development</span> journey
                         </p>
-                        <p className="text-md md:text-md text-gray-700 leading-relaxed mb-2 md:mb-5">
+                        <p className="text-md md:text-md text-gray-700 leading-relaxed mb-2 md:mb-3 md:mr-6">
                             Hire our seasoned Product Specialists, Business Analysts, and Data Scientists for
                         </p>
-                        <p className="hidden sm:block text-base md:text-md text-gray-700 leading-relaxed mb-4 md:mb-6">
+                        <p className="hidden sm:block text-base md:text-md
+                         text-gray-700 leading-relaxed mb-4 md:mb-6 md:ml-3">
                             Market Research, Customer Surveys, User Stories, Marketing Collaterals, and Content.
                         </p>
                         <div className="grid grid-cols-1 gap-6 mb-2 md:mb-6">
                             <div className=" rounded-lg text-start">
-                                <h3 className="text-2xl md:text-3xl font-bold text-black  md:mb-5 ml-2">
+                                <h3 className="text-2xl md:text-3xl font-bold text-black  md:mb-5 ml-2 md:ml-3">
                                     50+
                                 </h3>
-                                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                                <p className="text-base md:text-lg text-gray-700 leading-relaxed md:ml-3">
                                     Years of combined experience of our experts in delivering Software Products <br /> in diverse Industry Verticals and Technology Horizontals.
                                 </p>
                             </div>
                         </div>
-                        <div style={{ width: '150px' }}>
+                        <div style={{ width: '170px' }}>
                             <Link href="/services/#ai" >
                                 <p className="flex items-center border-2 border-black py-3 px-6
-                                 text-black hover:bg-blue-200 transition-colors duration-300 rounded-lg mt-10 md:mb-8">
-                                    <span className="mr-2">Learn More</span>
+                                 text-black hover:bg-blue-200 transition-colors duration-300
+                                  rounded-lg mt-10 md:mb-8 md:ml-3">
+                                    <span className="mr-2 ">Learn More</span>
                                     {/* <ArrowDownwardIcon /> */}
                                 </p>
                             </Link>

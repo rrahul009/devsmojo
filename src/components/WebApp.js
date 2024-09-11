@@ -62,9 +62,9 @@ const WebDevelopmentCard = () => {
     }, []);
   
     return (
-        <section id="web-development" className="bg-white py-2">
-            <div className="container mx-auto px-4 md:px-8"data-aos="zoom-in-up">
-                <div className="bg-white shadow-lg rounded-lg p-8 mb-8">
+        <section id="web-development" className="bg-white md:py-2 mt-2 ">
+            <div className="container mx-auto px-4 md:px-8 "data-aos="zoom-in-up">
+                <div className="bg-white shadow-lg rounded-lg md:p-8  mb-8">
                     <div className="text-center mb-6">
                         <h2 className="text-4xl font-bold text-black mb-2">
                             Web Development

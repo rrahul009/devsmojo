@@ -85,16 +85,17 @@ const PitchSection = () => {
                                     <Link href="/aboutus/#schedular">
                                         <li className=" ml-5 mt-5">
 
-                                            <strong className="font-semibold text-blue-600">Talk to Our Experts</strong>
+                                            <strong className="font-semibold text-blue-600 ml-3">Talk to Our Experts</strong>
 
                                         </li></Link>
                                 </ul>
                             </section>
                         </div>
-                        <div className="flex-shrink-0 md:w-1/2 flex justify-center md:justify-center mt-1 md:mt-0">
+                        <div className="flex-shrink-0 md:w-1/2 flex justify-center md:justify-center mt-1 md:mt-0 p-2">
                             <img
                                 // src="https://www.apollotechnical.com/wp-content/uploads/2021/10/resume-writing-scaled-1.jpg"
-                                src='/prevetedresume.jpeg'
+                                // src='/prevetedresume.jpeg'
+                                src='https://media.licdn.com/dms/image/D5612AQGoIOzzWNQVqg/article-cover_image-shrink_720_1280/0/1674216042919?e=2147483647&v=beta&t=e2QmgZQmOV1ovVAG0f-93A7MuBOXPW3kkdkA2Z1b1Is'
                                 alt="Software Consulting"
                                 className="object-fill rounded-md"
                                 style={{ height: '370px', width: '550px', marginTop: '20px' }}

@@ -56,9 +56,9 @@ const DevOpsAndCloudInfrastructure = () => {
         return cleanupAOS; // Cleanup AOS on unmount
     }, []);
     return (
-        <section className="bg-gray-100 p-5" data-aos="zoom-in-up">
+        <section className="bg-gray-100 md:p-5" data-aos="zoom-in-up">
             <div  className="container mx-auto px-4">
-                <div className="bg-white shadow-lg rounded-lg p-5 mb-5 max-w-7xl mx-auto">
+                <div className="bg-white shadow-lg rounded-lg md:p-5 mb-5 max-w-7xl mx-auto">
                     <div id="cloud-computing"  className="text-center mb-6 p-2">
                         <h2 className="text-4xl font-bold text-black mb-4">
                             DevOps and Cloud Infrastructure
