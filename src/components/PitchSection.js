@@ -24,7 +24,7 @@ const PitchSection = () => {
                                 src='/software_consulting_services.jpg'
                                 alt="Software Consulting"
                                 className="object-cover rounded-md"
-                                style={{ height: '320px', width: '570px' }}
+                                style={{ height: '320px', width: '590px' }}
                             />
                         </div>
                         <div className="flex-1 md:w-1/2 mb-6 md:mb-0">
@@ -67,7 +67,7 @@ const PitchSection = () => {
                                     <li className="flex ">
                                         <span className="text-blue-500 text-xl mr-3"><FileDownloadDoneIcon /></span>
                                         <span>
-                                            <strong>Cherry Pick from 200k+ Profiles:</strong> Gain access to a curated selection of top candidates.
+                                            <strong >Cherry Pick from 200k+ Profiles:</strong> Gain access to a curated selection of top candidates.
                                         </span>
                                     </li>
                                     <li className="flex items-start">

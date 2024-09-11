@@ -1,10 +1,16 @@
-import React from 'react'
+'use client'
+import { initializeAOS } from '@/app/utils/Aos_setup';
+import React, { useEffect } from 'react'
 
 const TrendingSkills = () => {
+    useEffect(() => {
+        const cleanupAOS = initializeAOS();
+        return cleanupAOS; // Cleanup AOS on unmount
+    }, []);
     return (
-        <div className='p-2'>
+        <div className='p-2' data-aos="zoom-in-up">
             <p className='text-center text-4xl font-bold '>
-                PFA Infographic for Our Strength in Top Trending Skills and Approve.
+                Our Strength in Top Trending Skills 
             </p>
             <div className='flex justify-center'>
                 <img 

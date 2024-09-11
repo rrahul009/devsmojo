@@ -129,7 +129,6 @@ const Carausel = () => {
                     </div>
                 </div>
                 {/* third slide */}
-
                 <div className='flex flex-col md:flex-row bg-gray-100 p-2 py-4 md:p-5'>
                     <div className="max-w-5xl mx-auto p-4 flex-1">
                         <p className="text-2xl md:text-4xl font-bold leading-tight mb-2 md:mb-6">

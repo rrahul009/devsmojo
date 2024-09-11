@@ -1,10 +1,16 @@
+'use client'
+import { initializeAOS } from '@/app/utils/Aos_setup';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaCheckCircle } from 'react-icons/fa'; // Importing the check icon
 
 const MeetingPage = () => {
+  useEffect(() => {
+    const cleanupAOS = initializeAOS();
+    return cleanupAOS; // Cleanup AOS on unmount
+}, []);
   return (
-    <div className=" bg-gray-100 flex items-center justify-center p-3">
+    <div className=" bg-gray-100 flex items-center justify-center p-3"data-aos="zoom-in-up" >
       <div className="flex flex-col md:flex-row w-full max-w-6xl bg-white rounded-lg shadow-lg relative overflow-hidden">
         {/* Background Image */}
         {/* <div className="absolute inset-0">
