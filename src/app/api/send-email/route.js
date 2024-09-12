@@ -17,7 +17,7 @@ export async function POST(request) {
     // Define the email options
     const mailOptions = {
       from:email, // Replace with your email address
-      to: 'rakesh@devsmojo.com', // Replace with the recipient's email address
+      to: 'rrahulkumaryadav347@gmail.com', // Replace with the recipient's email address
       subject: 'New Contact Form Submission',
       replyTo: email,
       text: `
