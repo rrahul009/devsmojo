@@ -287,7 +287,7 @@ const ServicePage = () => {
       {/* Web Development */}
 
       <WebDevelopmentCard />
-
+      <CustomApp />
       <DevOpsAndCloudInfrastructure />
 
       <CustomApp />

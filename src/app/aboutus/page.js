@@ -15,7 +15,7 @@ const MeetOurTeam = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-gray-100 p-2 md:py-5" data-aos="zoom-in-up">
+      <div className="bg-gray-100 p-2 md:py-5 " data-aos="zoom-in-up">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">
             {/* Text Section */}
@@ -60,11 +60,15 @@ const MeetOurTeam = () => {
 
       </section>
 
-      <Schedular />
+     
 
+    
+    <Schedular />
+  
 
-
-      <Footer />
+    
+     {/* <Footer /> */}
+      
     </>
 
   );

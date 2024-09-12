@@ -56,7 +56,7 @@ const PitchSection = () => {
             {/* 2nd card */}
 
             <div className="p-3 mt-5  bg-gray-100 rounded-lg shadow-md" style={{ fontFamily: "sans-serif" }} data-aos="zoom-in-up" >
-                <section className="mb-12">
+                <section className="mb-0">
                     <h1 className="text-4xl font-bold text-center mb-2  text-black">"Why Choose Our Pre-Vetted Resume Service?”</h1>
                     <div className="flex flex-col md:flex-row items-start md:items-center md:space-x-8 space-y-6 md:space-y-0">
                         <div className="flex-1 md:w-1/2 mb-2 md:mb-0 space-x-5">
@@ -131,8 +131,8 @@ const PitchSection = () => {
             </div>
 
             {/* 3rd card */}
-            <div className="p-8 bg-white  mt-5 rounded-lg shadow-md" data-aos="zoom-in-up">
-                <section className="mb-5">
+            <div className="p-2 bg-white  mt-5 rounded-lg shadow-md" data-aos="zoom-in-up">
+                <section className="mb-0">
                     <h2 className="text-4xl text-center font-bold text-black mb-4">Navigate Your MVP Journey with Expertise</h2>
                     <div className="flex flex-col md:flex-row items-start md:items-center md:space-x-8 space-y-6 md:space-y-0">
                         <div className="flex-shrink-0 md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0">

@@ -1,10 +1,10 @@
 'use client';
 import { initializeAOS } from '@/app/utils/Aos_setup';
-import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
+import React, { useEffect, useState, useRef } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { FaCalendarAlt } from 'react-icons/fa';
-import emailjs from 'emailjs-com'; // Import EmailJS
 
 const CustomDatePickerInput = ({ value, onClick, placeholder }) => (
   <div
@@ -23,46 +23,66 @@ const CustomDatePickerInput = ({ value, onClick, placeholder }) => (
 );
 
 const Schedular = () => {
+  const containerRef = useRef(null); // Ref for the container
+
   useEffect(() => {
     const cleanupAOS = initializeAOS();
+
+    // Scroll to top
+    if (containerRef.current) {
+      containerRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
     return cleanupAOS; // Cleanup AOS on unmount
   }, []);
 
-  const [startDate, setStartDate] = useState(null);
+  const [startDate, setStartDate] = useState(null); // Initialize as null
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setSubmitted(false); // Reset the submission state
 
-    const templateParams = {
-      name,
-      email,
-      phone,
-      date: startDate ? startDate.toISOString() : '',
-      message,
-    };
-
-    emailjs.send('service_j9qzp24', 'template_vzl19ks', templateParams, 'tmz0vHNuzcIcTf0NA')
-      .then((response) => {
-        console.log('Email sent successfully:', response);
-        setSubmitted(true);
-      })
-      .catch((error) => {
-        console.error('Error sending email:', error);
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          message,
+          startDate: startDate ? startDate.toISOString() : null, // Send date as ISO string
+        }),
       });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        console.error('Failed to submit form');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
   };
 
   return (
-    <div id="schedular" className="bg-gray-100 flex items-center justify-center mt-5" data-aos="zoom-in-up">
-      <div className="flex flex-col md:flex-row w-full max-w-6xl bg-white rounded-lg py-0 mt-5">
+    <div
+      id="schedular"
+      className="bg-gray-100 min-h-screen flex flex-col items-center justify-start px-4 py-6"
+      data-aos="zoom-in-up"
+    >
+      <div className="flex flex-col md:flex-row w-full max-w-6xl bg-white rounded-lg py-6 md:py-8">
         {/* Image Section */}
         <div className="md:w-1/2 flex justify-center items-center p-5">
           <img
-            src="https://assets.biztimes.com/uploads/2019/11/management-calendar_1537654346-1068x601.jpg" // Replace with your image URL
+            src="https://assets.biztimes.com/uploads/2019/11/management-calendar_1537654346-1068x601.jpg"
             alt="Meeting Illustration"
             className="w-full h-auto object-cover rounded-l-lg"
             style={{ height: '400px', objectFit: 'cover' }}
@@ -70,13 +90,15 @@ const Schedular = () => {
         </div>
 
         {/* Form Section */}
-        <div className="md:w-1/2 p-2">
-          <h1 className="text-2xl font-bold mb-2 text-start">Schedule a Meeting</h1>
+        <div className="md:w-1/2 p-5">
+          <h1 className="text-2xl font-bold mb-2 text-start">{submitted ?"":"Schedule a Meeting"}</h1>
           {submitted ? (
-            <div className="text-center">
-              <h2 className="text-lg font-semibold">Thank you!</h2>
+            <div className="text-center  ">
+              <h2 className="text-lg font-semibold mt-12">Thank you!</h2>
               <p>Your meeting request has been received. We will get back to you shortly.</p>
+              <Link href="/"><button className='bg-black text-white p-3 mt-4'>Go Back</button></Link>
             </div>
+          
           ) : (
             <form onSubmit={handleSubmit}>
               <div className="mb-2">
