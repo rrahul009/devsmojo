@@ -93,7 +93,7 @@ const Schedular = () => {
         <div className="md:w-1/2 p-5">
           <h1 className="text-2xl font-bold mb-2 text-start">{submitted ?"":"Schedule a Meeting"}</h1>
           {submitted ? (
-            <div className="text-center  ">
+            <div className="text-center ">
               <h2 className="text-lg font-semibold mt-12">Thank you!</h2>
               <p>Your meeting request has been received. We will get back to you shortly.</p>
               <Link href="/"><button className='bg-black text-white p-3 mt-4'>Go Back</button></Link>
