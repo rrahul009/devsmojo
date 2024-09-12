@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { FaCalendarAlt } from 'react-icons/fa';
+import emailjs from 'emailjs-com'; // Import EmailJS
 
 const CustomDatePickerInput = ({ value, onClick, placeholder }) => (
   <div
@@ -25,22 +26,38 @@ const Schedular = () => {
   useEffect(() => {
     const cleanupAOS = initializeAOS();
     return cleanupAOS; // Cleanup AOS on unmount
-}, []);
-  const [startDate, setStartDate] = useState(null); // Initialize as null
+  }, []);
+
+  const [startDate, setStartDate] = useState(null);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState(''); // New state for phone number
+  const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Normally here you would handle the form submission, e.g., sending data to a server.
-    setSubmitted(true);
+
+    const templateParams = {
+      name,
+      email,
+      phone,
+      date: startDate ? startDate.toISOString() : '',
+      message,
+    };
+
+    emailjs.send('service_j9qzp24', 'template_vzl19ks', templateParams, 'tmz0vHNuzcIcTf0NA')
+      .then((response) => {
+        console.log('Email sent successfully:', response);
+        setSubmitted(true);
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error);
+      });
   };
 
   return (
-    <div id="schedular" className="bg-gray-100 flex items-center justify-center mt-5"data-aos="zoom-in-up">
+    <div id="schedular" className="bg-gray-100 flex items-center justify-center mt-5" data-aos="zoom-in-up">
       <div className="flex flex-col md:flex-row w-full max-w-6xl bg-white rounded-lg py-0 mt-5">
         {/* Image Section */}
         <div className="md:w-1/2 flex justify-center items-center p-5">

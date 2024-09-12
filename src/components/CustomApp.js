@@ -41,7 +41,9 @@ const CustomAppDevelopment = () => {
     }, []);
 
     return (
-        <section className="bg-gray-100 py-2" data-aos="zoom-in-up">
+      <div>
+        
+       <section className="bg-gray-100 py-2" >
             <div className="container mx-auto px-4">
                 <div className="bg-white shadow-lg rounded-lg p-5 mb-5 max-w-7xl mx-auto">
                     <div className="text-center mb-6">
@@ -73,7 +75,11 @@ const CustomAppDevelopment = () => {
                     </div>
                 </div>
             </div>
+
+
+
         </section>
+      </div>
     );
 };
 

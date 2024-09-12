@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 /* styles/globals.css */
+/* global.css */
 html {
     scroll-behavior: smooth;
-}
+  }
+  

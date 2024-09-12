@@ -7,38 +7,15 @@ import Link from 'next/link';
 import React, { useEffect } from 'react';
 import { initializeAOS } from '../utils/Aos_setup';
 
-// const teamMembers = [
-//   {
-//     name: 'John Doe',
-//     role: 'Lead Developer',
-//     imageUrl: 'https://static4.depositphotos.com/1000816/514/i/450/depositphotos_5140926-stock-photo-closeup-of-employee-in-the.jpg'
-//   },
-//   {
-//     name: 'Jane Smith',
-//     role: 'Project Manager',
-//     imageUrl: 'https://img.freepik.com/free-photo/portrait-happy-manager-holding-leather-case_1262-5329.jpg'
-//   },
-//   {
-//     name: 'Alex Johnson',
-//     role: 'UI/UX Designer',
-//     imageUrl: 'https://t4.ftcdn.net/jpg/02/07/68/43/360_F_207684339_dFUUI0leWvNaKJR6Da0ZswUhLI4YzIGT.webp'
-//   },
-//   {
-//     name: 'Emily Davis',
-//     role: 'Marketing Specialist',
-//     imageUrl: 'https://photos.peopleimages.com/picture/202303/2676077-professional-smile-and-portrait-of-asian-man-in-office-for-executive-confident-and-pride.-development-corporate-and-growth-with-male-employee-in-agency-for-management-expert-and-director-fit_400_400.jpg'
-//   }
-// ];
-
 const MeetOurTeam = () => {
   useEffect(() => {
     const cleanupAOS = initializeAOS();
     return cleanupAOS; // Cleanup AOS on unmount
-}, []);
+  }, []);
   return (
     <>
       <Navbar />
-      <div className="bg-gray-100 p-2 md:py-5"data-aos="zoom-in-up">
+      <div className="bg-gray-100 p-2 md:py-5" data-aos="zoom-in-up">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">
             {/* Text Section */}
@@ -47,7 +24,7 @@ const MeetOurTeam = () => {
               <p className="text-md text-gray-600 mb-6">
                 At devsMojo, we are dedicated to transforming your vision into reality through innovative and cutting-edge technology solutions. With a team of skilled professionals, we specialize in custom app development, cloud services, and digital transformation to drive your business forward. Our mission is to deliver exceptional quality and value by harnessing the latest technology trends and providing tailored solutions that meet your unique needs. From ideation to execution, we work closely with you to ensure every project is a success, helping you stay ahead in a rapidly evolving digital landscape.
               </p>
-              
+
             </div>
 
             {/* Image Section */}

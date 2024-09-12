@@ -2,6 +2,7 @@ import React from 'react';
 import { FaCheck, FaStore, FaCreditCard, FaIndustry } from 'react-icons/fa'; // Icons for Retail, Finance, and Manufacturing
 
 const ArtificialIntelligence = () => {
+
     const aiUseCases = [
         {
             title: 'Retail',
@@ -42,16 +43,16 @@ const ArtificialIntelligence = () => {
     ];
 
     return (
-        <div className="py-0 bg-gray-100 rounded-lg shadow-lg mt-8">
-            <section id="ai" className=" mb-12">
+
+        <div className=" bg-gray-100  rounded-lg shadow-lg  " style={{ scrollBehavior: 'smooth' }}>
+            <section className="mb-12">
                 {/* Image and Text Section */}
-                <div className="md:p-8 p-4">
+                <div className="md:p-5 ml-2 p-4">
                     <div className="flex flex-col md:flex-row items-start md:items-center md:space-x-8 space-y-6 md:space-y-0">
                         {/* Image Section */}
-
                         {/* Text Section */}
-                        <div className="flex-1 md:w-1/2 mb-6 md:mb-0 space-y-3">
-                            <h1 className="text-3xl font-bold text-black  text-center">Why Invest in AI?</h1>
+                        <div className="flex-1 md:w-1/2 mb-6 md:mb-0 space-y-3" id="ai">
+                            <h1 className="text-3xl font-bold text-black text-center">Why Invest in AI?</h1>
                             <p>If you are confronted with the following questions, then AI can create powerful and very reliable solutions:</p>
                             <ul className="list-disc pl-5 space-y-2">
                                 <li>You have a process where human judgement errors not allowing you to scale?</li>
@@ -77,7 +78,7 @@ const ArtificialIntelligence = () => {
                             />
                         </div>
                     </div>
-                    <h1 className="text-3xl font-bold text-black text-start mb-6 mt-5 ">AI Use Cases</h1>
+                    <h1  className="text-3xl font-bold text-black text-start mb-6 mt-5">AI Use Cases</h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {aiUseCases.map((useCase, index) => (
                             <div
@@ -91,7 +92,7 @@ const ArtificialIntelligence = () => {
                                 <div>
                                     <h3 className="text-xl font-semibold text-blue-700 mb-2">{useCase.title}</h3>
                                     <p className="text-gray-700">{useCase.description}</p>
-                                    <ul className="list-disc pl-5 mt-2">
+                                    <ul  id="mobile-development" className="list-disc pl-5 mt-2">
                                         {useCase.details.map((detail, detailIndex) => (
                                             <li key={detailIndex} className="text-gray-700">{detail}</li>
                                         ))}
@@ -103,6 +104,7 @@ const ArtificialIntelligence = () => {
                 </div>
             </section>
         </div>
+
     );
 }
 
