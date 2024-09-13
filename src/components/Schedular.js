@@ -1,3 +1,15 @@
+import React from 'react'
+
+const Schedular = () => {
+  return (
+    <div>
+      <h2>Hello</h2>
+    </div>
+  )
+}
+
+export default Schedular
+
 // 'use client';
 // import { initializeAOS } from '@/app/utils/Aos_setup';
 // import Link from 'next/link';
