@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="w-full md:w-1/4 mb-6">
             <h3 className="text-lg font-semibold mb-4">DevsMojo Technology</h3>
-            <p className="text-gray-400 mb-2">D-76, Noida  Sector 63</p>
+            <p className="text-gray-400 mb-2"> Noida  Sector 62</p>
             <p className="text-gray-400 mb-2">Noida, Uttar Pradesh, 201301</p>
             <p className="text-gray-400 mb-2">Phone: 9354097674
 

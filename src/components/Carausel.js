@@ -123,13 +123,15 @@ const Carausel = () => {
                     </div>
                     <div className='hidden md:flex flex-1 justify-center items-center mt-6'>
                         <img
-                            src='https://www.oceansoftwares.com/assets/img/Services/customised.webp'
+                        
+                            src='https://dopetgztsfho3.cloudfront.net/Hero_desktop_Staff_Augmentation_Services_a3578648f2.webp'
                             alt='Custom Software Development'
                             className='object-cover rounded-lg max-w-full h-auto'
                             style={{ maxWidth: '900px', maxHeight: '400px' }}
                         />
                     </div>
                 </div>
+
                 {/* third slide */}
                 <div className='flex flex-col md:flex-row bg-gray-100 p-2 py-4 md:p-5'>
                     <div className="max-w-5xl mx-auto p-4 flex-1">
