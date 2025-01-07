@@ -20,7 +20,7 @@ const Carausel = () => {
             <Carousel
                 autoPlay={true}
                 infiniteLoop={true}
-                interval={3000}
+                interval={4000}
                 stopOnHover={true}
                 showStatus={false}
             >
